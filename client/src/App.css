@@ -23,7 +23,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.9); /* Slight white overlay for readability */
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 8px;
   min-height: 100vh;
 }
@@ -42,6 +42,9 @@ nav {
   padding: 1rem;
   border-radius: 4px;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav ul {
@@ -62,6 +65,12 @@ nav a {
 
 nav a:hover {
   color: var(--aqua-blue);
+}
+
+#logo img {
+  height: 40px;
+  width: auto;
+  display: block; 
 }
 
 /* Form styles */

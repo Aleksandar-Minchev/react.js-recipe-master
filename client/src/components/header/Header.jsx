@@ -5,6 +5,7 @@ export default function Header() {
       <>
       <header>
       <nav>
+      <Link id="logo" to="/"><img src="./images/logo.png" alt="img" /></Link>
       <ul >
         <li >
           <Link to="/about">
