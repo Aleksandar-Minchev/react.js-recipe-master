@@ -4,6 +4,8 @@ import Catalog from './components/Catalog';
 import Contacts from './components/Contacts';
 import Details from './components/Details';
 import Login from './components/Login';
+import Register from './components/Register';
+
 
 function App() {
 
@@ -12,6 +14,7 @@ function App() {
         <About />
         <Contacts />
         <Login />
+        <Register />
         <Catalog />
         <Details />
     </>
