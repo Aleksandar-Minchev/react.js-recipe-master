@@ -10,7 +10,8 @@ import Contacts from './components/Contacts';
 import About from './components/About';
 import Footer from './components/Footer/Footer';
 
-import './App.css'
+import './App.css';
+import './components/Footer/Footer.css';
 
 function App() {
 

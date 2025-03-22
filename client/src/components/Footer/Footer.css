@@ -1,0 +1,116 @@
+footer.container-fluid {
+    background-color: var(--deep-teal);
+    padding: 60px 0;
+    color: var(--light-blue);
+  }
+  
+  /* Footer Content */
+  footer .row.no-gutters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  footer .col-lg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+  }
+  
+  /* Background and text color for footer content */
+  footer .col-lg.d-flex {
+    background-color: var(--teal-green);
+    color: var(--light-blue);
+    opacity: 0.9;
+    padding: 40px;
+    border-radius: 8px;
+  }
+  
+  /* Heading and title styles */
+  footer h2.u-heading-v2__title {
+    color: var(--light-blue);
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  
+  /* Paragraph for lead text */
+  footer .lead {
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: var(--light-blue);
+  }
+  
+  /* Address list styling */
+  footer address ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer address li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: baseline;
+    color: var(--light-blue);
+  }
+  
+  /* Icon and text in footer */
+  footer address i {
+    color: var(--aqua-blue);
+    margin-right: 10px;
+  }
+  
+  /* Footer contact text and links */
+  footer address p, footer address span {
+    color: var(--light-blue);
+    font-size: 1rem;
+  }
+  
+  /* Links */
+  footer address a {
+    color: var(--light-blue);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer address a:hover {
+    color: var(--aqua-blue);
+  }
+  
+  /* Google Map container */
+  footer .col-lg.g-min-height-400 {
+    height: 400px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f3f3f3;
+  }
+  
+  footer #gMap4 {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    footer {
+      padding: 40px 20px;
+    }
+  
+    footer .col-lg {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    footer h2.u-heading-v2__title {
+      font-size: 1.5rem;
+    }
+  
+    footer address {
+      width: 100%;
+    }
+  }
