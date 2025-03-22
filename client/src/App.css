@@ -145,6 +145,25 @@ h1 {
   color: white;
 }
 
+footer {
+  width: 100%;
+  margin-left: calc(-1 * (100vw - 100%) / 2);
+  margin-right: calc(-1 * (100vw - 100%) / 2);
+}
+
+/* Ensure the container inside the footer respects the max-width */
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Ensure the copyright section spans the full width */
+footer > div:last-child {
+  width: 100%;
+  margin-left: calc(-1 * (100vw - 100%) / 2);
+  margin-right: calc(-1 * (100vw - 100%) / 2);
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .app {

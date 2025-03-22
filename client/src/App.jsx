@@ -7,11 +7,10 @@ import Register from './components/Register';
 import Header from './components/header/Header';
 import Home from './components/Home';
 import Contacts from './components/Contacts';
-import About from './components/About';
 import Footer from './components/Footer/Footer';
 
 import './App.css';
-import './components/Footer/Footer.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
@@ -24,7 +23,6 @@ function App() {
             <Route path="/" element={<Home />}/>
             <Route path="/login" element={<Login />}/>
             <Route path="/contacts" element={<Contacts />}/>
-            <Route path="/about" element={<About />}/>
             <Route path="/recipes" element={<Catalog />}/>
             <Route path="/register" element={<Register />}/>       
             <Route path="/details" element={<Details />}/>       
