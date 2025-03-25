@@ -12,6 +12,10 @@ export default function Register() {
         <label>Password:</label>
         <input type="password" placeholder="Enter your password" required />
         <br />
+        <br />
+        <label>Confirm Password:</label>
+        <input type="confirm-password" placeholder="Confirm your password" required />
+        <br />
         <button type="submit">Register</button>
         </form>
         </>

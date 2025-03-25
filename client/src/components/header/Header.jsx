@@ -8,13 +8,8 @@ export default function Header() {
       <Link id="logo" to="/"><img src="./images/logo.png" alt="img" /></Link>
       <ul >
         <li >
-          <Link to="/about">
-            <button>About</button>
-          </Link>
-        </li>
-        <li >
-          <Link to="/contacts">
-            <button>Contacts</button>
+          <Link to="/catalog">
+            <button>Catalog</button>
           </Link>
         </li>
         <li >
