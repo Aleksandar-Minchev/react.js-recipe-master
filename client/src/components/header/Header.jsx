@@ -8,24 +8,16 @@ export default function Header() {
       <Link id="logo" to="/"><img src="./images/logo.png" alt="img" /></Link>
       <ul >
         <li >
-          <Link to="/catalog">
-            <button>Catalog</button>
-          </Link>
+          <Link to="/catalog"><button>Catalog</button></Link>
         </li>
         <li >
-          <Link to="/register">
-            <button>Register</button>
-          </Link>
+          <Link to="/register"><button>Register</button></Link>
         </li>
         <li >
-          <Link to="/login">
-            <button>Login</button>
-          </Link>
+          <Link to="/login"><button>Login</button></Link>
         </li>
         <li >
-          <Link to="/create">
-            <button>Create</button>
-          </Link>
+          <Link to="/create"><button>Create</button></Link>
         </li>
         <li >
           <button>Logout</button>
