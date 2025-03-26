@@ -20,7 +20,7 @@ export default function Header() {
           <Link to="/create"><button>Create</button></Link>
         </li>
         <li >
-          <button>Logout</button>
+          <Link to="/logout"><button>Logout</button></Link>          
         </li>
           </ul>
       </nav>

@@ -31,7 +31,7 @@ export default function Login() {
         <label>Password:</label>
         <input type="password" name="password" placeholder="Enter your password" required />
         <br />
-        <button type="submit">Login</button>
+        <button type="submit" disabled={isPending}>Login</button>
         <p className="field">
             <span>If you don't have profile click <Link to="/register">here</Link></span>
         </p>

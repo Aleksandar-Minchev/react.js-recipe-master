@@ -1,3 +1,5 @@
+import { useContext, useEffect } from "react";
+import { UserContext } from "../contexts/userContext";
 import {requester} from "../utils/requester";
 
 
@@ -9,4 +11,28 @@ export const useLogin = () => {
     return {
         login,
     }
+};
+
+export const useLogout = () => {
+    const { accessToken, userLogoutHandler } = useContext(UserContext);
+
+    useEffect(() => {
+        if (!accessToken) {
+            return;
+        }
+
+        const options = {
+            headers: {
+                'X-Authorization': accessToken,
+            }
+        };
+
+        requester(`${baseUrl}/logout`, null,'GET', options)
+            .then(userLogoutHandler);
+
+    }, [accessToken, userLogoutHandler]);
+
+    return {
+        isLoggedOut: !!accessToken,
+    };
 };
