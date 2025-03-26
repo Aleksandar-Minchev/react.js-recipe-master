@@ -1,4 +1,4 @@
-export default requester = async (url, data, method, options = {}) => {
+export const requester = async (url, data, method, options = {}) => {
     options.method = method;
 
     if (data){
