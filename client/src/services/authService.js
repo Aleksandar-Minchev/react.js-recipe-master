@@ -36,3 +36,12 @@ export const useLogout = () => {
         isLoggedOut: !!accessToken,
     };
 };
+
+export const useRegister = () => {
+    const register = (email, password) =>
+        requester(`${baseUrl}/register`, { email, password }, 'POST');
+
+    return {
+        register,
+    }
+};
