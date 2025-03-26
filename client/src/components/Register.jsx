@@ -29,7 +29,7 @@ export default function Register() {
         <h1>Register</h1>
         <form action={registerHandler}>
         <label>Name:</label>
-        <input type="text" name="name"placeholder="Enter your name" required />
+        <input type="text" name="name" placeholder="Enter your name" required />
         <br />
         <label>Email:</label>
         <input type="email" name="email" placeholder="Enter your email" required />
