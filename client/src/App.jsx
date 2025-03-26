@@ -1,5 +1,7 @@
 import { Routes, Route } from 'react-router';
 
+import UserProvider from './providers/UserProvider';
+
 import Catalog from './components/Catalog';
 import Details from './components/Details';
 import Login from './components/Login';
@@ -15,7 +17,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
 
   return (
-    <div id="box">
+    <UserProvider>
+      <div id="box">
         <Header/>
 
         <main id="main-content">
@@ -31,7 +34,8 @@ function App() {
         </main>
 
         <Footer/>
-    </div>    
+      </div>    
+    </UserProvider>
   )
 }
 

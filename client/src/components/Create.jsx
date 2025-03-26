@@ -2,7 +2,7 @@ export default function Create() {
     return(
         <>
         <h1>Create New Recipe</h1>
-        <form>
+        <form id='create'>
           <input type="text" name="title" placeholder="Recipe Title" required />
           
           <textarea name="description" placeholder="Description" rows="4" required />
