@@ -22,6 +22,9 @@ export default function Header() {
               <li >
                 <Link to="/logout"><button>Logout</button></Link>          
               </li>
+              <li >
+                <p style={{color: 'var(--light-blue)'}}>Hello, {email}!</p>
+              </li>
             </>         
           )
           : (
@@ -32,10 +35,14 @@ export default function Header() {
               <li >
                 <Link to="/login"><button>Login</button></Link>
               </li>
+              <li >
+              <p style={{color: 'var(--light-blue)'}}>Hello, guest!</p>
+              </li>
             </>
           )
+          
         }
-          </ul>
+      </ul>
       </nav>
       </header>
       </>

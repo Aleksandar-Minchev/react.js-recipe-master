@@ -6,6 +6,7 @@ import Catalog from './components/Catalog';
 import Details from './components/Details';
 import Login from './components/Login';
 import Register from './components/Register';
+import Logout from './components/Logout';
 import Create from './components/Create';
 import Header from './components/header/Header';
 import Home from './components/Home';
@@ -13,7 +14,6 @@ import Footer from './components/Footer/Footer';
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Logout from './components/Logout';
 
 function App() {
 
