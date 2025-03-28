@@ -9,7 +9,7 @@ export default function Login() {
     const { userLoginHandler } = useContext(UserContext);
     const { login } = useLogin();
 
-    const loginHandler = async (_, formData) => {
+    const loginHandler = async (previousState, formData) => {
         const values = Object.fromEntries(formData);
 
         const authData = await login(values.email, values.password);
@@ -19,7 +19,7 @@ export default function Login() {
         navigate('/');
     };
 
-    const [_, loginAction, isPending] = useActionState(loginHandler, { email: '', password: '' });
+    const [values, loginAction, isPending] = useActionState(loginHandler, { email: '', password: '' });
 
     return(
         <>
