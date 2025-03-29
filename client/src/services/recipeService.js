@@ -23,3 +23,12 @@ export const UseGetAll = () => {
 
     return { recipes };
 };
+
+export const useDelete = () => {
+    const deleteRecipe = (recipeId) =>
+        requester(`${baseUrl}/${recipeId}`, null, 'DELETE');
+
+    return {
+        deleteRecipe
+    }
+}
