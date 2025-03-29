@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router';
 
 import UserProvider from './providers/UserProvider';
 
-import Catalog from './components/Catalog';
+import Catalog from './components/recipe-catalog/Catalog';
 import Details from './components/Details';
 import Login from './components/Login';
 import Register from './components/Register';
@@ -27,9 +27,9 @@ function App() {
             <Route path="/" element={<Home />}/>
             <Route path="/login" element={<Login />}/>
             <Route path="/logout" element={<Logout />}/>
-            <Route path="/catalog" element={<Catalog />}/>
-            <Route path="/create" element={<Create />}/>
             <Route path="/recipes" element={<Catalog />}/>
+            <Route path="/recipes/:recipeId/details" element={<Details />}/>
+            <Route path="/create" element={<Create />}/>
             <Route path="/register" element={<Register />}/>       
             <Route path="/details" element={<Details />}/>       
           </Routes>

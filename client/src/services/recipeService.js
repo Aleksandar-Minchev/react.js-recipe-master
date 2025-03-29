@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { requester } from "../utils/requester";
 
 const baseUrl = 'http://localhost:3030/data/recipeMaster';
@@ -10,4 +11,15 @@ export const useCreateRecipe = () => {
     return {
         create,
     }
+};
+
+export const UseGetAll = () => {
+    const [recipes, setRecipes] = useState([]);
+
+    useEffect(() => {
+        requester(baseUrl, null, 'GET')
+            .then(setRecipes)
+    }, []);
+
+    return { recipes };
 };

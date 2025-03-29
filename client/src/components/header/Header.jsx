@@ -11,7 +11,7 @@ export default function Header() {
       <Link id="logo" to="/"><img src="./images/logo.png" alt="img" /></Link>
       <ul >
         <li >
-          <Link to="/catalog"><button>Catalog</button></Link>
+          <Link to="/recipes"><button>Catalog</button></Link>
         </li>
         {isAuthenticated
           ? (

@@ -10,7 +10,7 @@ export default function Create() {
 
       await create(recipeData);
 
-      navigate('/catalog');
+      navigate('/recipes');
   };
     return(
         <>

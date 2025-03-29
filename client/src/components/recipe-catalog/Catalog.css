@@ -1,0 +1,139 @@
+#catalog-page {
+    padding: 20px;
+  }
+  
+  /* Catalog Heading */
+  #catalog-page h1 {
+    color: var(--deep-teal);
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  /* No Articles Message */
+  .no-articles {
+    color: var(--warm-brown);
+    text-align: center;
+    padding: 20px;
+    background: var(--light-blue);
+    border-radius: 4px;
+    margin: 20px 0;
+  }
+  
+  /* Container for Catalog Items */
+  .catalog-items-container {
+    display: flex; /* Enforce horizontal layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Center items horizontally */
+    padding: 20px 0;
+  }
+  
+  /* Recipes Container */
+  .recipes {
+    background: var(--light-blue);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s ease;
+    width: 100%; /* Ensure it takes full width of its container */
+    max-width: 300px; /* Limit the width of each card */
+  }
+  
+  .recipes:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Recipes Info */
+  .recipes-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  /* Recipe Image */
+  .recipes-info img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  /* Recipe Description */
+  .recipes-info h6 {
+    color: var(--warm-brown);
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  /* Recipe Title */
+  .recipes-info h2 {
+    color: var(--deep-teal);
+    margin: 10px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Details Button */
+  .details-button {
+    display: inline-block;
+    padding: 8px 20px;
+    background: var(--teal-green);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .details-button:hover {
+    background: var(--aqua-blue);
+    color: white;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    #catalog-page {
+      padding: 15px;
+    }
+  
+    #catalog-page h1 {
+      font-size: 1.5rem;
+    }
+  
+    .catalog-items-container {
+      gap: 15px;
+      padding: 15px 0;
+    }
+  
+    .recipes {
+      max-width: 250px; /* Slightly smaller cards on tablet */
+    }
+  
+    .recipes-info h2 {
+      font-size: 1.25rem;
+    }
+  
+    .recipes-info h6 {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .catalog-items-container {
+      flex-direction: column; /* Stack vertically on small screens */
+      align-items: center;
+    }
+  
+    .recipes {
+      max-width: 100%; /* Full width on mobile */
+      padding: 10px;
+    }
+  
+    .details-button {
+      padding: 6px 15px;
+      font-size: 0.9rem;
+    }
+  }
