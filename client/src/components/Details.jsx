@@ -1,8 +1,10 @@
 import { useNavigate, useParams } from "react-router";
 import { useDelete } from "../services/recipeService";
+import { usePageTitle } from "../hooks/usePageTitle";
 
 
 export default function Details() {
+    usePageTitle('Recipe Details');
     const navigate = useNavigate()
     const {recipeId} = useParams();
     const {deleteRecipe} = useDelete();

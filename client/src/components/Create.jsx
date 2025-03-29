@@ -1,7 +1,9 @@
 import { useNavigate } from "react-router";
 import { useCreateRecipe } from "../services/recipeService";
+import { usePageTitle } from "../hooks/usePageTitle";
 
 export default function Create() {
+    usePageTitle('Create Recipe');
     const navigate = useNavigate();
     const { create } = useCreateRecipe();
 

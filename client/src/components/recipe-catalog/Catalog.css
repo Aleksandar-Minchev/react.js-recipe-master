@@ -1,83 +1,112 @@
 #catalog-page {
     padding: 20px;
-  }
-  
-  /* Catalog Heading */
-  #catalog-page h1 {
+}
+
+/* Catalog Heading */
+#catalog-page h1 {
     color: var(--deep-teal);
     margin-bottom: 20px;
     font-size: 2rem;
     text-align: center;
-  }
-  
-  /* No Articles Message */
-  .no-articles {
+}
+
+/* No Articles Message */
+.no-articles {
     color: var(--warm-brown);
     text-align: center;
     padding: 20px;
     background: var(--light-blue);
     border-radius: 4px;
     margin: 20px 0;
-  }
-  
-  /* Container for Catalog Items */
-  .catalog-items-container {
+}
+
+/* Container for Catalog Items */
+.catalog-items-container {
     display: flex; /* Enforce horizontal layout */
     flex-wrap: wrap; /* Allow items to wrap to the next line */
     gap: 20px; /* Space between items */
     justify-content: center; /* Center items horizontally */
     padding: 20px 0;
-  }
-  
-  /* Recipes Container */
-  .recipes {
+}
+
+/* Recipes Container */
+.recipes {
     background: var(--light-blue);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 15px;
     transition: transform 0.3s ease;
     width: 100%; /* Ensure it takes full width of its container */
-    max-width: 300px; /* Limit the width of each card */
-  }
-  
-  .recipes:hover {
+    max-width: 300px; /* Fixed max-width for consistency */
+    height: 500px; /* Fixed height to ensure all cards are the same size */
+    display: flex; /* Use flex to control internal layout */
+    flex-direction: column; /* Stack children vertically */
+}
+
+/* Hover effect */
+.recipes:hover {
     transform: translateY(-5px);
-  }
-  
-  /* Recipes Info */
-  .recipes-info {
+}
+
+/* Recipes Info */
+.recipes-info {
     display: flex;
     flex-direction: column;
     gap: 10px;
     text-align: center;
-  }
-  
-  /* Recipe Image */
-  .recipes-info img {
+    flex: 1; /* Allow this section to grow and fill available space */
+    overflow: hidden; /* Prevent overflow from breaking layout */
+}
+
+/* Recipe Image */
+.recipes-info img {
     width: 100%;
-    max-height: 200px;
+    height: 200px; /* Fixed height for images to ensure consistency */
     object-fit: cover;
     border-radius: 4px;
-  }
-  
-  /* Recipe Description */
-  .recipes-info h6 {
+}
+
+/* Recipe Description */
+.recipes-info h6 {
     color: var(--warm-brown);
     margin: 0;
     font-size: 1rem;
     line-height: 1.4;
-  }
-  
-  /* Recipe Title */
-  .recipes-info h2 {
+    max-height: 150px; /* Fixed height for the description area */
+    overflow-y: auto; /* Add vertical scrollbar if content overflows */
+    padding-right: 5px; /* Prevent text from touching the scrollbar */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: var(--teal-green) var(--light-blue); /* For Firefox */
+}
+
+/* Custom Scrollbar for Webkit browsers (Chrome, Safari) */
+.recipes-info h6::-webkit-scrollbar {
+    width: 6px;
+}
+
+.recipes-info h6::-webkit-scrollbar-track {
+    background: var(--light-blue);
+}
+
+.recipes-info h6::-webkit-scrollbar-thumb {
+    background: var(--teal-green);
+    border-radius: 3px;
+}
+
+.recipes-info h6::-webkit-scrollbar-thumb:hover {
+    background: var(--aqua-blue);
+}
+
+/* Recipe Title */
+.recipes-info h2 {
     color: var(--deep-teal);
     margin: 10px 0;
     font-size: 1.5rem;
     font-weight: bold;
-  }
-  
-  /* Details Button */
-  .details-button {
+}
+
+/* Details Button */
+.details-button {
     display: inline-block;
     padding: 8px 20px;
     background: var(--teal-green);
@@ -86,54 +115,72 @@
     border-radius: 4px;
     transition: background 0.3s ease;
     font-weight: bold;
-  }
-  
-  .details-button:hover {
+    margin-top: auto; /* Push the button to the bottom of the card */
+}
+
+/* Hover effect for button */
+.details-button:hover {
     background: var(--aqua-blue);
     color: white;
-  }
-  
-  /* Media Queries */
-  @media (max-width: 768px) {
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
     #catalog-page {
-      padding: 15px;
+        padding: 15px;
     }
-  
+
     #catalog-page h1 {
-      font-size: 1.5rem;
+        font-size: 1.5rem;
     }
-  
+
     .catalog-items-container {
-      gap: 15px;
-      padding: 15px 0;
+        gap: 15px;
+        padding: 15px 0;
     }
-  
+
     .recipes {
-      max-width: 250px; /* Slightly smaller cards on tablet */
+        max-width: 250px; /* Slightly smaller cards on tablet */
+        height: 450px; /* Adjust height for smaller screens */
     }
-  
-    .recipes-info h2 {
-      font-size: 1.25rem;
+
+    .recipes-info img {
+        height: 180px; /* Slightly smaller image height */
     }
-  
+
     .recipes-info h6 {
-      font-size: 0.9rem;
+        max-height: 120px; /* Adjust description height */
+        font-size: 0.9rem;
     }
-  }
-  
-  @media (max-width: 480px) {
+
+    .recipes-info h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
     .catalog-items-container {
-      flex-direction: column; /* Stack vertically on small screens */
-      align-items: center;
+        flex-direction: column; /* Stack vertically on small screens */
+        align-items: center;
     }
-  
+
     .recipes {
-      max-width: 100%; /* Full width on mobile */
-      padding: 10px;
+        max-width: 100%; /* Full width on mobile */
+        height: 400px; /* Adjust height for mobile */
+        padding: 10px;
     }
-  
+
+    .recipes-info img {
+        height: 150px; /* Smaller image height for mobile */
+    }
+
+    .recipes-info h6 {
+        max-height: 100px; /* Adjust description height */
+        font-size: 0.9rem;
+    }
+
     .details-button {
-      padding: 6px 15px;
-      font-size: 0.9rem;
+        padding: 6px 15px;
+        font-size: 0.9rem;
     }
-  }
+}

@@ -1,3 +1,4 @@
+import { usePageTitle } from "../../hooks/usePageTitle";
 import { UseGetAll } from "../../services/recipeService";
 import CatalogItem from "./catalog-item/CatalogItem";
 
@@ -5,6 +6,7 @@ import './catalog.css'
 
 
 export default function Catalog() {
+    usePageTitle('Catalog');
     const { recipes } = UseGetAll();
 
     return (

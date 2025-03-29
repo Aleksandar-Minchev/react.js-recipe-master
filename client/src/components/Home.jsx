@@ -1,4 +1,7 @@
+import { usePageTitle } from "../hooks/usePageTitle";
+
 export default function Home() {
+    usePageTitle('Home Page');
     return(
         <>
          <h1>HomePage</h1>
