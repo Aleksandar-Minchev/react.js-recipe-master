@@ -24,6 +24,19 @@ export const UseGetAll = () => {
     return { recipes };
 };
 
+export const UseOne = (recipeId) => {
+    const [recipe, setRecipe] = useState({});
+
+    useEffect(() => {
+        requester(`${baseUrl}/${recipeId}`, null, 'GET')
+            .then(setRecipe);
+    }, [recipeId])
+
+    return {
+        recipe,
+    };
+};
+
 export const useDelete = () => {
     const deleteRecipe = (recipeId) =>
         requester(`${baseUrl}/${recipeId}`, null, 'DELETE');
@@ -31,4 +44,4 @@ export const useDelete = () => {
     return {
         deleteRecipe
     }
-}
+};
