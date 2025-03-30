@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router';
 import UserProvider from './providers/UserProvider';
 
 import Catalog from './components/recipe-catalog/Catalog';
-import Details from './components/Details';
+import Details from './components/recipe-details/Details';
 import Login from './components/Login';
 import Register from './components/Register';
 import Logout from './components/Logout';
