@@ -1,6 +1,7 @@
 import { useNavigate, useParams } from "react-router";
 import { useDelete, UseOne } from "../../services/recipeService";
 import { usePageTitle } from "../../hooks/usePageTitle";
+import useAuth from "../../hooks/useAuth";
 
 import './Details.css'
 
@@ -9,8 +10,12 @@ export default function Details() {
     usePageTitle('Recipe Details');
     const navigate = useNavigate()
     const {recipeId} = useParams();
-    const {deleteRecipe} = useDelete();
     const { recipe } = UseOne(recipeId);
+    const {deleteRecipe} = useDelete();
+    const { email, userId } = useAuth()
+
+
+    const isOwner = userId === recipe._ownerId;
 
     const deleteRecipeHandler = async () => {
     const hasConfirm = confirm(`Are you sure you want to delete ${recipe.title}?`);
@@ -37,14 +42,24 @@ export default function Details() {
           </div>
           <p name="instructions" >Instructions: {recipe.instructions}</p>
         </div>
-        <div>
-          <button>Edit</button>
-          <button onClick={deleteRecipeHandler}>Delete</button>
-          <button>Like</button>
-        </div>
+        {email && (
+          <div>
+            {isOwner && (
+              <>
+              <button>Edit</button>
+              <button onClick={deleteRecipeHandler}>Delete</button>
+              </>
+            )}
+            <button>Like</button>
+          </div>
+        )}
         <h2>Comments</h2>
-        <textarea placeholder="Add your comment here..."></textarea>
-        <button>Submit Comment</button>
+        {email && (
+          <>
+          <textarea placeholder="Add your comment here..."></textarea>
+          <button>Submit Comment</button>
+          </>
+        )}
         <div>
           <p>Comments:</p>
             <ul>
