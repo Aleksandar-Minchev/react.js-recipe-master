@@ -32,6 +32,6 @@ export const requester = async (url, data, method, options = {}) => {
     }
     
     const result = await response.json();
-
+    
     return result;
 }

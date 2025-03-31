@@ -8,6 +8,7 @@ import Login from './components/Login';
 import Register from './components/Register';
 import Logout from './components/Logout';
 import Create from './components/Create';
+import Edit from './components/recipe-edit/Edit';
 import Header from './components/header/Header';
 import Home from './components/Home';
 import Footer from './components/Footer/Footer';
@@ -31,6 +32,7 @@ function App() {
             <Route path="/recipes/:recipeId/details" element={<Details />}/>
             <Route element={<AuthGuard />}>
                 <Route path="/create" element={<Create />}/>
+                <Route path="/recipes/:recipeId/edit" element={<Edit />}/>
                 <Route path="/logout" element={<Logout />}/>
             </Route>
             <Route element={<GuestGuard />}>

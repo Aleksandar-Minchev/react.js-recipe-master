@@ -1,4 +1,4 @@
-import { useNavigate, useParams } from "react-router";
+import { Link, useNavigate, useParams } from "react-router";
 import { useDelete, UseOne } from "../../services/recipeService";
 import { usePageTitle } from "../../hooks/usePageTitle";
 import useAuth from "../../hooks/useAuth";
@@ -12,8 +12,8 @@ export default function Details() {
     const {recipeId} = useParams();
     const { recipe } = UseOne(recipeId);
     const {deleteRecipe} = useDelete();
-    const { email, userId } = useAuth()
-
+    const { email, userId } = useAuth();
+    
 
     const isOwner = userId === recipe._ownerId;
 
@@ -46,7 +46,7 @@ export default function Details() {
           <div>
             {isOwner && (
               <>
-              <button>Edit</button>
+              <Link to={`/recipes/${recipeId}/edit`}><button>Edit</button></Link> 
               <button onClick={deleteRecipeHandler}>Delete</button>
               </>
             )}

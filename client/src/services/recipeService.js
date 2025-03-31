@@ -45,3 +45,12 @@ export const useDelete = () => {
         deleteRecipe
     }
 };
+
+export const useEdit = () => {
+    const edit = (recipeId, recipeData) =>
+        requester(`${baseUrl}/${recipeId}`, { ...recipeData, _id: recipeId }, 'PUT');
+
+    return {
+        edit
+    }
+};
