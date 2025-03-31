@@ -1649,7 +1649,79 @@
     			_createdOn: 1616237272948,
     			_updatedOn: 1616237293676
     		}
-    	}
+    	},
+        recipeMaster: [
+            {
+                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                "title": "Fluffy Scrambled Eggs",
+                "imageUrl": "https://therecipemaster.com/wp-content/uploads/2024/10/Scrambled-Eggs-2.webp",
+                "description": "Scrambled eggs may seem simple, but achieving the perfect, fluffy texture can be a bit of a challenge. Whether you’re cooking breakfast for yourself or serving up a family brunch, mastering this kitchen staple will elevate your morning meals. Today, we’re diving into one specific kitchen tip that will help you make perfectly fluffy scrambled eggs that are consistently soft, creamy, and delicious.",
+                "ingredients": "4 large eggs\n1 tablespoon of butter or a splash of olive oil\nSalt and pepper to taste\nOptional: a splash of milk or cream for extra creaminess",
+                "instructions": "Crack and Whisk: Start by cracking your eggs into a bowl. Use a fork or whisk to beat the eggs until the yolks and whites are fully combined. Whisking also adds air to the eggs, which helps to make them fluffy.\nHeat the Pan: Place a non-stick pan over low heat. Add a tablespoon of butter or a splash of olive oil. Let the butter melt gently, ensuring it doesn’t brown.\nAdd the Eggs: Pour the beaten eggs into the pan. Do not stir immediately. Allow the eggs to sit undisturbed for a few moments.\nStir Gently: Using a spatula, gently stir the eggs, pushing from the edges of the pan towards the center. Keep the movements slow and steady, folding the eggs rather than vigorously stirring them.\nRemove from Heat Early: The eggs will continue to cook even after you remove them from the heat, so take them off when they are still slightly runny. This ensures that they remain soft and creamy by the time they are ready to serve.\nSeason and Serve: Add a pinch of salt and pepper to taste. Serve immediately with your favorite breakfast sides.",
+                "_createdOn": 1743205562841,
+                "_id": "34ed10b2-5bcf-867b-8561-45695bd78fc0"
+            },
+            {
+                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                "title": "Taco Lasagna Recipe",
+                "imageUrl": "https://therecipemaster.com/wp-content/uploads/2024/11/Taco-Lasagna-Recipe1-800x530.webp",
+                "description": "Tired of the same old taco night routine? Let’s shake things up with a taco lasagna recipe that’s equal parts comfort food and fiesta! This dish combines all your favorite taco flavors into a layered masterpiece, using soft tortillas instead of pasta. Perfect for family dinners, potlucks, or anytime you’re craving something bold and hearty, this taco lasagna recipe with tortillas will have everyone coming back for seconds. Let’s dive into the layers of flavor!",
+                "ingredients": "1 lb ground beef\n\n1 small onion, diced\n\n2 cloves garlic, minced\n\n1 packet taco seasoning\n\n1 can (15 oz) refried beans\n\n1 can (10 oz) diced tomatoes with green chilies\n\n1 cup salsa\n\n1 cup corn kernels (canned or frozen)\n\n8 large flour tortillas\n\n2 cups shredded Mexican blend cheese\n\n1 cup sour cream\n\n1/4 cup chopped cilantro (for garnish)\n\nOlive oil (for sautéing)",
+                "instructions": "Preheat your oven to 375°F (190°C). Grease a 9×13-inch baking dish.\nCook the ground beef in a skillet over medium heat with a bit of olive oil. Add the onion and garlic, sautéing until softened.\nStir in the taco seasoning, diced tomatoes, and corn. Let it simmer for 5-7 minutes until flavors combine.\nIn a bowl, mix the refried beans with half of the salsa.\nLayer the lasagna:Spread a thin layer of the beef mixture on the bottom of the baking dish.\nPlace a tortilla on top, followed by a layer of refried beans, beef mixture, shredded cheese, and a few dollops of sour cream.\nRepeat the layers, finishing with a tortilla topped with salsa and a generous sprinkle of cheese.\nBake for 25-30 minutes or until the cheese is bubbly and golden.\nLet it rest for 10 minutes before slicing. Garnish with cilantro and serve hot.",
+                "_createdOn": 1743206285615,
+                "_id": "34ed10b2-8ecf-477b-8561-45695bd78fc0"
+            },
+            {
+                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                "title": "Creamy Chicken Alfredo with Jar Sauce",
+                "imageUrl": "https://therecipemaster.com/wp-content/uploads/2025/01/Chicken-Alfredo-Recipe-with-Jar-Sauce2-800x530.webp",
+                "description": "Picture this: a steaming bowl of creamy pasta, tender chicken, and luscious Alfredo sauce enveloping every bite. This easy chicken Alfredo recipe with jar sauce isn’t just a dish—it’s a savior for busy weeknights and a comfort on lazy weekends. Whether you’re a kitchen novice or a seasoned cook, this recipe offers simplicity without sacrificing flavor.\n\nThe magic lies in its versatility: you can stick to the basics for a quick fix or dress it up with fresh herbs, extra cheese, or even a splash of wine for an elevated experience. Plus, the jar sauce gives you a head start, saving time while still delivering that indulgent creamy texture we all love.",
+                "ingredients": "2 large chicken breasts, sliced thinly\n\n1 jar (16 oz) of Alfredo sauce (use your favorite brand)\n\n12 oz fettuccine or your choice of pasta\n\n2 tbsp olive oil\n\n2 garlic cloves, minced\n\n1/2 cup grated Parmesan cheese\n\n1/4 cup heavy cream (optional for extra creaminess)\n\nSalt and pepper to taste\n\nFresh parsley or basil for garnish",
+                "instructions": "Prepare the Pasta:\nCook pasta according to the package instructions. Reserve 1/2 cup of pasta water, drain, and set aside.\nCook the Chicken:\nHeat olive oil in a large skillet over medium heat.\nSeason chicken slices with salt and pepper.\nSauté the chicken for 4–5 minutes per side until golden brown and cooked through. Remove and set aside.\nMake the Sauce:\nIn the same skillet, add minced garlic and sauté for 30 seconds until fragrant.\nPour the jar of Alfredo sauce into the skillet. Add the heavy cream (optional) and stir.\nSimmer the sauce for 2–3 minutes, adjusting consistency with reserved pasta water if needed.\nCombine Everything:\nAdd the cooked chicken back into the skillet.\nToss in the cooked pasta and mix well to coat evenly with the sauce.\nServe:\nSprinkle grated Parmesan on top.\nGarnish with fresh parsley or basil before serving.",
+                "_createdOn": 1743244806729,
+                "_id": "34ed10b2-8ecf-477b-8963-59595bd78fc0"
+            },
+            {
+                "_ownerId": "b46675fa-a86d-43ef-9b80-9398df4d26a9",
+                "title": "Starbucks Egg White Bites Recipe",
+                "imageUrl": "https://therecipemaster.com/wp-content/uploads/2024/11/Starbucks-Egg-White-Bites-Recipe2-800x530.webp",
+                "description": "Craving Starbucks but want to skip the line? This Starbucks egg white bites recipe is the perfect solution! Packed with protein and infused with the flavors of Gruyère and Monterey Jack cheese, these fluffy bites are a guilt-free treat you can make in minutes. Whether you’re meal-prepping for busy mornings or enjoying a snack on the go, these egg bites are a must-try!",
+                "ingredients": "4 large egg whites\n\n¼ cup cottage cheese\n\n2 tbsp shredded Monterey Jack cheese\n\n2 tbsp shredded Gruyère cheese\n\n1 tbsp diced red bell pepper\n\n1 tbsp diced green onion\n\n½ tsp salt\n\n¼ tsp black pepper\n\nOlive oil spray",
+                "instructions": "Preheat your oven to 325°F (160°C) and lightly grease a muffin tin with olive oil spray.\nIn a blender, combine the egg whites, cottage cheese, Monterey Jack, Gruyère, salt, and pepper. Blend until smooth.\nPour the egg mixture into the muffin tin, filling each cup about ¾ full.\nEvenly distribute the diced bell peppers and green onions into each muffin cup.\nBake for 20–25 minutes, or until the egg bites are set and slightly golden on top.\nLet cool for 5 minutes before carefully removing the bites from the tin. Serve warm or store for meal prep.",
+                "_createdOn": 1743245811333,
+                "_id": "34ed10b2-8ecf-477b-5469-59595bd78fc0"
+            },
+            {
+                "_ownerId": "b46675fa-a86d-43ef-9b80-9398df4d26a9",
+                "title": "Lemon Pepper Wings Recipe",
+                "imageUrl": "https://therecipemaster.com/wp-content/uploads/2024/11/Lemon-Pepper-Wings-Recipe-1-800x530.webp",
+                "description": "This Lemon pepper wings recipe is the perfect blend of tangy citrus and savory spices that you’ll love. These wings are crispy on the outside, juicy on the inside, and coated with a delicious lemon pepper seasoning that makes them irresistible. Whether you’re serving them for game day, a family dinner, or as a party appetizer, this easy recipe will surely become a new favorite. You’ll be able to make these zesty wings at home with simple ingredients, minimal prep, and a mouth-watering result that will have everyone asking for more!",
+                "ingredients": "12 chicken wings (whole)\n\n2 tbsp olive oil\n\n1 tbsp lemon zest\n\n2 tbsp fresh lemon juice\n\n1 tbsp lemon pepper seasoning\n\n1 tsp garlic powder\n\n1/2 tsp paprika\n\nSalt and black pepper to taste\n\nFresh parsley (optional, for garnish)",
+                "instructions": "Preheat the oven to 400°F (200°C).\nPat the chicken wings dry with paper towels to ensure they crisp up in the oven.\nIn a large bowl, toss the wings with olive oil, lemon zest, lemon juice, lemon pepper seasoning, garlic powder, paprika, salt, and black pepper.\nArrange the wings in a single layer on a baking sheet lined with parchment paper or foil.\nBake for 25-30 minutes, flipping the wings halfway through, until golden and crispy.\nRemove from the oven, and garnish with fresh parsley if desired. Serve hot and enjoy!",
+                "_createdOn": 1743250145460,
+                "_id": "34ed10b2-8ecf-477b-8051-66555bd78fc0"
+            },
+            {
+                "_ownerId": "b46675fa-a86d-43ef-9b80-9398df4d26a9",
+                "title": "Chicken Cream Cheese Recipe",
+                "imageUrl": "https://therecipemaster.com/wp-content/uploads/2024/10/chicken-cream-cheese-recipe.webp",
+                "description": "If you’re looking for a creamy, crowd-pleasing dish, this chicken cream cheese recipe is just the thing! Blending savory chicken with a rich, creamy sauce, it’s a comforting meal. Easy to whip up any night of the week. It’s no wonder why chicken and cream cheese recipes have become a family favorite, perfect for cozy dinners or even meal prep.",
+                "ingredients": "2 large chicken breasts, cubed\n\n8 oz cream cheese, softened\n\n1 tbsp olive oil\n\n1 tsp garlic powder\n\n½ tsp onion powder\n\n½ tsp smoked paprika\n\nSalt and pepper to taste\n\n½ cup shredded cheddar cheese\n\n¼ cup diced green onions (optional)\n\n1 cup chicken broth\n\n1 tbsp fresh parsley, chopped (for garnish)",
+                "instructions": "Sear the Chicken: Heat olive oil in a large skillet over medium-high heat. Season chicken cubes with salt, pepper, garlic powder, onion powder, and paprika, and cook for 5–7 minutes until browned on all sides.\nAdd Cream Cheese: Reduce heat to medium, then add the cream cheese and chicken broth to the skillet, stirring until the cream cheese melts and the sauce is creamy.\nAdd Cheddar: Stir in shredded cheddar cheese and allow it to melt into the sauce. Continue cooking for an additional 5–10 minutes until the chicken is fully cooked and the sauce thickens.\nServe: Remove from heat and garnish with green onions and fresh parsley. Serve hot over rice, pasta, or with crusty bread.",
+                "_createdOn": 1743250200457,
+                "_id": "34ed10b2-8ecf-477b-8051-59595bd78fc0"
+            },
+            {
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "title": "Smoked Salmon Brine Recipe",
+                "imageUrl": "https://therecipemaster.com/wp-content/uploads/2024/11/Smoked-Salmon-Brine-Recipe-1.webp",
+                "description": "Unlock the magic of homemade smoked salmon with this smoked salmon brine recipe! Whether you’re a seasoned smoker or a beginner, crafting a flavorful brine is the key to elevating your fish to gourmet levels. This versatile smoked salmon dry brine recipe combines rich seasonings with simple ingredients, ensuring your salmon turns out perfectly moist, flavorful, and utterly irresistible.",
+                "ingredients": "\n4 cups water\n\n1/4 cup kosher salt\n\n1/4 cup brown sugar (or white sugar)\n\n1 teaspoon black peppercorns\n\n2 cloves garlic, minced\n\n2 teaspoons onion powder\n\n2 teaspoons dill (fresh or dried)\n\n1 bay leaf\n\nOptional: 1 teaspoon paprika or smoked paprika for added flavor",
+                "instructions": "Prepare the Brine:\nIn a large bowl, combine water, kosher salt, and brown sugar. Stir until fully dissolved.\nAdd Flavorings:\nMix in black peppercorns, garlic, onion powder, dill, bay leaf, and paprika.\nBrine the Salmon:\nPlace salmon fillets in a large zip-top bag or shallow dish. Pour the brine over the salmon until fully submerged.\nRefrigerate:\nCover or seal and refrigerate for 4–12 hours. For a stronger flavor, opt for a longer brining time.\nRinse and Dry:\nRemove salmon from the brine and rinse under cold water. Pat dry with paper towels.\nSmoke the Salmon:\nSmoke salmon at 180°F (82°C) for 3–4 hours until the internal temperature reaches 145°F (63°C).\nServe:\nLet the smoked salmon cool slightly before slicing and serving.",
+                "_createdOn": 1743427763906,
+                "_id": "51ed09b2-8ecf-467b-8051-59595bd78fc0"
+            }
+        ]
     };
     var rules$1 = {
     	users: {
