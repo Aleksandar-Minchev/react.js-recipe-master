@@ -37,6 +37,23 @@ export const UseOne = (recipeId) => {
     };
 };
 
+export const UseGetLatest = () => {
+    
+    const [latestRecipes, setLatestRecipes] = useState([]);
+
+    useEffect(() => {
+        const searchParams = new URLSearchParams({
+            sortBy: '_createdOn desc',
+            pageSize: 4,
+            select: '_id,imageUrl,title,description',
+        });
+        requester(`${baseUrl}?${searchParams.toString()}`, null, 'GET')
+            .then(setLatestRecipes);
+    }, [])
+    
+    return { latestRecipes };
+};
+
 export const useDelete = () => {
     const deleteRecipe = (recipeId) =>
         requester(`${baseUrl}/${recipeId}`, null, 'DELETE');
