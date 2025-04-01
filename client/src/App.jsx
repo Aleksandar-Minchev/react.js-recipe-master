@@ -4,13 +4,13 @@ import UserProvider from './components/providers/UserProvider';
 
 import Catalog from './components/recipe-catalog/Catalog';
 import Details from './components/recipe-details/Details';
-import Login from './components/Login';
-import Register from './components/Register';
-import Logout from './components/Logout';
-import Create from './components/Create';
+import Login from './components/user-login/Login';
+import Register from './components/user-register/Register';
+import Logout from './components/user-logout/Logout';
+import Create from './components/recipe-create/Create';
 import Edit from './components/recipe-edit/Edit';
 import Header from './components/header/Header';
-import Home from './components/Home';
+import Home from './components/home/Home';
 import Footer from './components/Footer/Footer';
 import AuthGuard from './components/guards/authGuard';
 import GuestGuard from './components/guards/guestGuard';

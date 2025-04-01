@@ -1,6 +1,6 @@
-import { usePageTitle } from "../hooks/usePageTitle";
-import { UseGetLatest } from "../services/recipeService";
-import CatalogItem from "./recipe-catalog/catalog-item/CatalogItem";
+import { usePageTitle } from "../../hooks/usePageTitle";
+import { UseGetLatest } from "../../services/recipeService";
+import CatalogItem from "../recipe-catalog/catalog-item/CatalogItem";
 
 export default function Home() {
     usePageTitle('Home Page');

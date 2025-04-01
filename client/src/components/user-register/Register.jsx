@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router";
-import { useRegister } from "../services/authService";
-import { useUserContext } from "../contexts/userContext";
-import { usePageTitle } from "../hooks/usePageTitle";
+import { useRegister } from "../../services/authService";
+import { useUserContext } from "../../contexts/userContext";
+import { usePageTitle } from "../../hooks/usePageTitle";
 
 export default function Register() {
     usePageTitle('Register Page');

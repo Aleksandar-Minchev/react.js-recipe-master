@@ -1,5 +1,5 @@
 import { Navigate } from "react-router";
-import { useLogout } from "../services/authService";
+import { useLogout } from "../../services/authService";
 
 export default function Logout() {
     const { isLoggedOut } = useLogout()

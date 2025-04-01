@@ -1,9 +1,9 @@
 import { Link, useNavigate } from "react-router";
 import { useActionState, useContext } from "react";
 
-import { useLogin } from "../services/authService";
-import { UserContext } from "../contexts/userContext";
-import { usePageTitle } from "../hooks/usePageTitle";
+import { useLogin } from "../../services/authService";
+import { UserContext } from "../../contexts/userContext";
+import { usePageTitle } from "../../hooks/usePageTitle";
 
 export default function Login() {
     usePageTitle('Login Page');
