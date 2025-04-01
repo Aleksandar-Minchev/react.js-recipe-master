@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router";
+
 import './footer.css';
 
 export default function Footer() {
@@ -20,23 +22,20 @@ export default function Footer() {
               <h5 className="section-title">Quick Links</h5>
               <ul className="links-list">
                 <li>
-                  <a href="#!" className="footer-link">Frequently Asked Questions</a>
+                  <Link to="/faq" className="footer-link">Frequently Asked Questions</Link>
                 </li>
                 <li>
-                  <a href="#!" className="footer-link">Contacts</a>
+                  <Link to="/contacts" className="footer-link">Contacts</Link>
                 </li>
                 <li>
-                  <a href="#!" className="footer-link">Pricing</a>
-                </li>
-                <li>
-                  <a href="#!" className="footer-link">Where we deliver?</a>
+                  <Link to="/recipes" className="footer-link">Recipes</Link>
                 </li>
               </ul>
             </div>
     
             {/* Opening Hours Section */}
             <div className="col-lg-4 col-md-4 col-sm-12 footer-section">
-              <h5 className="section-title">Opening Hours</h5>
+              <h5 className="section-title">Contact us in our working time:</h5>
               <div className="hours-container">
                 <div className="hours-row">
                   <span>Mon - Fri:</span>

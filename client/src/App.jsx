@@ -12,6 +12,8 @@ import Edit from './components/recipe-edit/Edit';
 import Header from './components/header/Header';
 import Home from './components/home/Home';
 import Footer from './components/Footer/Footer';
+import Contacts from './components/footer/contacts/Contacts';
+import FAQ from './components/footer/FAQ/faq';
 import AuthGuard from './components/guards/authGuard';
 import GuestGuard from './components/guards/guestGuard';
 
@@ -30,6 +32,8 @@ function App() {
             <Route path="/" element={<Home />}/>
             <Route path="/recipes" element={<Catalog />}/>
             <Route path="/recipes/:recipeId/details" element={<Details />}/>
+            <Route path="/contacts" element={<Contacts />}/>
+            <Route path="/faq" element={<FAQ />}/>
             <Route element={<AuthGuard />}>
                 <Route path="/create" element={<Create />}/>
                 <Route path="/recipes/:recipeId/edit" element={<Edit />}/>

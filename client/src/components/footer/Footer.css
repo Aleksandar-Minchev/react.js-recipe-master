@@ -32,9 +32,9 @@
   .links-list {
     list-style-type: disc;
     padding-left: 20px;
-    display: flex;
+    display: grid;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
   }
   
   .footer-link {
@@ -54,7 +54,7 @@
   .hours-row {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     border: 1px solid var(--warm-brown);
     padding: 5px;
   }
