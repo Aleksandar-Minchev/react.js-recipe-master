@@ -21,17 +21,17 @@ export const useCreateComment = () => {
 
 export const useGetComments = (recipeId) => {
     const [comments, setComments] = useState([]);
-    
-        useEffect(() => {
-            const searchParams = new URLSearchParams({
-                where: `recipeId="${recipeId}"`,
-                select: '_id,comment,author',
-            });
-            requester(`${baseUrl}?${searchParams.toString()}`, null, 'GET')
-                .then(setComments);
-        }, [recipeId])
 
-        return {comments, setComments}
+    useEffect(() => {
+        const searchParams = new URLSearchParams({
+            where: `recipeId="${recipeId}"`,
+            select: '_id,comment,author',
+        });
+        requester(`${baseUrl}?${searchParams.toString()}`, null, 'GET')
+            .then(setComments);
+    }, [recipeId])
+
+    return { comments, setComments }
 };
 
 export const useDeleteComment = () => {

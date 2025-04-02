@@ -26,25 +26,25 @@ export default function Register() {
 
         navigate('/');
     }
-    return(
+    return (
         <>
-        <h1>Register</h1>
-        <form action={registerHandler}>
-        <label>Name:</label>
-        <input type="text" name="name" placeholder="Enter your name" required />
-        <br />
-        <label>Email:</label>
-        <input type="email" name="email" placeholder="Enter your email" required />
-        <br />
-        <label>Password:</label>
-        <input type="password" name="password" placeholder="Enter your password" required />
-        <br />
-        <br />
-        <label>Confirm Password:</label>
-        <input type="password" name="confirm-password" placeholder="Confirm your password" required />
-        <br />
-        <button type="submit">Register</button>
-        </form>
+            <h1>Register</h1>
+            <form action={registerHandler}>
+                <label>Name:</label>
+                <input type="text" name="name" placeholder="Enter your name" required />
+                <br />
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="Enter your email" required />
+                <br />
+                <label>Password:</label>
+                <input type="password" name="password" placeholder="Enter your password" required />
+                <br />
+                <br />
+                <label>Confirm Password:</label>
+                <input type="password" name="confirm-password" placeholder="Confirm your password" required />
+                <br />
+                <button type="submit">Register</button>
+            </form>
         </>
     );
 }

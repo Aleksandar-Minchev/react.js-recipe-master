@@ -16,9 +16,9 @@ export default function Catalog() {
             {recipes.length > 0
                 ? (<div className="catalog-items-container">
                     {recipes.map(recipe => (
-                  <CatalogItem key={recipe._id} {...recipe} />
-                ))}
-                    </div>)
+                        <CatalogItem key={recipe._id} {...recipe} />
+                    ))}
+                </div>)
                 : <h3 className="no-articles">No articles yet</h3>
             }
         </section>

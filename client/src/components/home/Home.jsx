@@ -7,20 +7,20 @@ export default function Home() {
 
     const { latestRecipes } = UseGetLatest();
 
-    return(
+    return (
         <>
-         <h1>Home Page</h1>
-        <p>Check out our amazing latest recipes!</p>
-        <section id="home-page">                    
-            {latestRecipes.length > 0
-                ? (<div className="catalog-items-container">
-                    {latestRecipes.map(recipe => (
-                  <CatalogItem key={recipe._id} {...recipe} />
-                ))}
+            <h1>Home Page</h1>
+            <p>Check out our amazing latest recipes!</p>
+            <section id="home-page">
+                {latestRecipes.length > 0
+                    ? (<div className="catalog-items-container">
+                        {latestRecipes.map(recipe => (
+                            <CatalogItem key={recipe._id} {...recipe} />
+                        ))}
                     </div>)
-                : <h3 className="no-articles">No articles yet</h3>
-            }
-        </section>
+                    : <h3 className="no-articles">No articles yet</h3>
+                }
+            </section>
         </>
     );
 }

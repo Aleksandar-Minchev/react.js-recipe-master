@@ -5,13 +5,13 @@ export default function CommentsCreate({
     recipeId,
     onCreate
 }) {
-    const {create} = useCreateComment();
+    const { create } = useCreateComment();
     const onSubmit = async (formData) => {
         const comment = formData.get('comment');
-  
+
         const createdComment = await create(recipeId, comment, email);
         onCreate(createdComment);
-      }
+    }
 
     return (
         <article className="create-comment">

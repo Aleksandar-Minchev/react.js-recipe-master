@@ -22,10 +22,14 @@
 
 /* Container for Catalog Items */
 .catalog-items-container {
-    display: flex; /* Enforce horizontal layout */
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    gap: 20px; /* Space between items */
-    justify-content: center; /* Center items horizontally */
+    display: flex;
+    /* Enforce horizontal layout */
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next line */
+    gap: 20px;
+    /* Space between items */
+    justify-content: center;
+    /* Center items horizontally */
     padding: 20px 0;
 }
 
@@ -36,11 +40,16 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 15px;
     transition: transform 0.3s ease;
-    width: 100%; /* Ensure it takes full width of its container */
-    max-width: 300px; /* Fixed max-width for consistency */
-    height: 500px; /* Fixed height to ensure all cards are the same size */
-    display: flex; /* Use flex to control internal layout */
-    flex-direction: column; /* Stack children vertically */
+    width: 100%;
+    /* Ensure it takes full width of its container */
+    max-width: 300px;
+    /* Fixed max-width for consistency */
+    height: 500px;
+    /* Fixed height to ensure all cards are the same size */
+    display: flex;
+    /* Use flex to control internal layout */
+    flex-direction: column;
+    /* Stack children vertically */
 }
 
 /* Hover effect */
@@ -54,14 +63,17 @@
     flex-direction: column;
     gap: 10px;
     text-align: center;
-    flex: 1; /* Allow this section to grow and fill available space */
-    overflow: hidden; /* Prevent overflow from breaking layout */
+    flex: 1;
+    /* Allow this section to grow and fill available space */
+    overflow: hidden;
+    /* Prevent overflow from breaking layout */
 }
 
 /* Recipe Image */
 .recipes-info img {
     width: 100%;
-    height: 200px; /* Fixed height for images to ensure consistency */
+    height: 200px;
+    /* Fixed height for images to ensure consistency */
     object-fit: cover;
     border-radius: 4px;
 }
@@ -72,11 +84,16 @@
     margin: 0;
     font-size: 1rem;
     line-height: 1.4;
-    max-height: 150px; /* Fixed height for the description area */
-    overflow-y: auto; /* Add vertical scrollbar if content overflows */
-    padding-right: 5px; /* Prevent text from touching the scrollbar */
-    scrollbar-width: thin; /* For Firefox */
-    scrollbar-color: var(--teal-green) var(--light-blue); /* For Firefox */
+    max-height: 150px;
+    /* Fixed height for the description area */
+    overflow-y: auto;
+    /* Add vertical scrollbar if content overflows */
+    padding-right: 5px;
+    /* Prevent text from touching the scrollbar */
+    scrollbar-width: thin;
+    /* For Firefox */
+    scrollbar-color: var(--teal-green) var(--light-blue);
+    /* For Firefox */
 }
 
 /* Custom Scrollbar for Webkit browsers (Chrome, Safari) */
@@ -115,7 +132,8 @@
     border-radius: 4px;
     transition: background 0.3s ease;
     font-weight: bold;
-    margin-top: auto; /* Push the button to the bottom of the card */
+    margin-top: auto;
+    /* Push the button to the bottom of the card */
 }
 
 /* Hover effect for button */
@@ -140,16 +158,20 @@
     }
 
     .recipes {
-        max-width: 250px; /* Slightly smaller cards on tablet */
-        height: 450px; /* Adjust height for smaller screens */
+        max-width: 250px;
+        /* Slightly smaller cards on tablet */
+        height: 450px;
+        /* Adjust height for smaller screens */
     }
 
     .recipes-info img {
-        height: 180px; /* Slightly smaller image height */
+        height: 180px;
+        /* Slightly smaller image height */
     }
 
     .recipes-info h6 {
-        max-height: 120px; /* Adjust description height */
+        max-height: 120px;
+        /* Adjust description height */
         font-size: 0.9rem;
     }
 
@@ -160,22 +182,27 @@
 
 @media (max-width: 480px) {
     .catalog-items-container {
-        flex-direction: column; /* Stack vertically on small screens */
+        flex-direction: column;
+        /* Stack vertically on small screens */
         align-items: center;
     }
 
     .recipes {
-        max-width: 100%; /* Full width on mobile */
-        height: 400px; /* Adjust height for mobile */
+        max-width: 100%;
+        /* Full width on mobile */
+        height: 400px;
+        /* Adjust height for mobile */
         padding: 10px;
     }
 
     .recipes-info img {
-        height: 150px; /* Smaller image height for mobile */
+        height: 150px;
+        /* Smaller image height for mobile */
     }
 
     .recipes-info h6 {
-        max-height: 100px; /* Adjust description height */
+        max-height: 100px;
+        /* Adjust description height */
         font-size: 0.9rem;
     }
 

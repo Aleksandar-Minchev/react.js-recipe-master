@@ -2,31 +2,31 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-  }
-  
-  .faq-title {
+}
+
+.faq-title {
     color: var(--deep-teal);
     font-size: 2rem;
     margin-bottom: 30px;
     text-align: center;
-  }
-  
-  .faq-item {
+}
+
+.faq-item {
     margin-bottom: 20px;
     padding: 15px;
     background-color: var(--light-blue);
     border-radius: 8px;
-  }
-  
-  .faq-question {
+}
+
+.faq-question {
     color: var(--deep-teal);
     font-size: 1.25rem;
     margin-bottom: 10px;
     font-weight: bold;
-  }
-  
-  .faq-answer {
+}
+
+.faq-answer {
     color: var(--warm-brown);
     font-size: 1rem;
     line-height: 1.5;
-  }
+}

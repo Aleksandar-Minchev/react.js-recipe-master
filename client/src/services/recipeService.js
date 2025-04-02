@@ -3,7 +3,7 @@ import { requester } from "../utils/requester";
 
 const baseUrl = 'http://localhost:3030/data/recipeMaster';
 
-export const useCreateRecipe = () => {  
+export const useCreateRecipe = () => {
 
     const create = (recipeData) =>
         requester(baseUrl, recipeData, 'POST');
@@ -15,7 +15,7 @@ export const useCreateRecipe = () => {
 
 export const UseGetAll = () => {
     const [recipes, setRecipes] = useState([]);
-    
+
     useEffect(() => {
         const searchParams = new URLSearchParams({
             select: '_id,imageUrl,title,description',
@@ -41,7 +41,7 @@ export const UseOne = (recipeId) => {
 };
 
 export const UseGetLatest = () => {
-    
+
     const [latestRecipes, setLatestRecipes] = useState([]);
 
     useEffect(() => {
@@ -53,7 +53,7 @@ export const UseGetLatest = () => {
         requester(`${baseUrl}?${searchParams.toString()}`, null, 'GET')
             .then(setLatestRecipes);
     }, [])
-    
+
     return { latestRecipes };
 };
 

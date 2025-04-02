@@ -8,28 +8,28 @@ export default function Create() {
     const { create } = useCreateRecipe();
 
     const createRecipe = async (formData) => {
-      const recipeData = Object.fromEntries(formData);
+        const recipeData = Object.fromEntries(formData);
 
-      await create(recipeData);
+        await create(recipeData);
 
-      navigate('/recipes');
-  };
-    return(
+        navigate('/recipes');
+    };
+    return (
         <>
-        <h1>Create New Recipe</h1>
-        <form id='create' action={createRecipe}>
-          <input type="text" name="title" placeholder="Recipe Title" required />
-          
-          <input type="url" name="imageUrl" placeholder="Image URL" required />
+            <h1>Create New Recipe</h1>
+            <form id='create' action={createRecipe}>
+                <input type="text" name="title" placeholder="Recipe Title" required />
 
-          <textarea name="description" placeholder="Description" rows="4" required />
-          
-          <textarea name="ingredients" placeholder="Ingredients" rows="6" required />
-          
-          <textarea name="instructions" placeholder="Instructions" rows="8" required />          
-          
-          <button type="submit">Create Recipe</button>
-        </form>
-    </>
+                <input type="url" name="imageUrl" placeholder="Image URL" required />
+
+                <textarea name="description" placeholder="Description" rows="4" required />
+
+                <textarea name="ingredients" placeholder="Ingredients" rows="6" required />
+
+                <textarea name="instructions" placeholder="Instructions" rows="8" required />
+
+                <button type="submit">Create Recipe</button>
+            </form>
+        </>
     );
 }

@@ -11,76 +11,70 @@ import './Details.css'
 export default function Details() {
     usePageTitle('Recipe Details');
     const navigate = useNavigate()
-    const {recipeId} = useParams();
+    const { recipeId } = useParams();
     const { recipe } = UseOne(recipeId);
-    const {deleteRecipe} = useDelete();
-    const { email, userId } = useAuth();    
-    const {comments, setComments} = useGetComments(recipeId);    
+    const { deleteRecipe } = useDelete();
+    const { email, userId } = useAuth();
+    const { comments, setComments } = useGetComments(recipeId);
 
     const isOwner = userId === recipe._ownerId;
 
     const deleteRecipeHandler = async () => {
-      const hasConfirm = confirm(`Are you sure you want to delete ${recipe.title}?`);
+        const hasConfirm = confirm(`Are you sure you want to delete ${recipe.title}?`);
 
-      if (!hasConfirm) {
+        if (!hasConfirm) {
             return;
-      }
+        }
 
-      await deleteRecipe(recipeId);
+        await deleteRecipe(recipeId);
 
-      navigate('/recipes');
+        navigate('/recipes');
     };
 
     const createCommentHandler = (newComment) => {
-      setComments(state => [...state, newComment])
-    };    
+        setComments(state => [...state, newComment])
+    };
 
-    return(
-      <section id="recipe-details">
-        <h1>Recipe Details</h1>
-        <div className="recipe-header">
-          <h3 name="title">{recipe.title}</h3>
-          <p name="description" >Description: {recipe.description}</p>
-          <div className="image-ingredients">
-            <img name="imageUrl" src={recipe.imageUrl} />
-            <p name="ingredients">Ingredients: {recipe.ingredients}</p>
-          </div>
-          <p name="instructions" >Instructions: {recipe.instructions}</p>
-        </div>
-        {email && (
-          <div>
+    return (
+        <section id="recipe-details">
+            <h1>Recipe Details</h1>
+            <div className="recipe-header">
+                <h3 name="title">{recipe.title}</h3>
+                <p name="description" >Description: {recipe.description}</p>
+                <div className="image-ingredients">
+                    <img name="imageUrl" src={recipe.imageUrl} />
+                    <p name="ingredients">Ingredients: {recipe.ingredients}</p>
+                </div>
+                <p name="instructions" >Instructions: {recipe.instructions}</p>
+            </div>
             {isOwner && (
-              <>
-              <Link to={`/recipes/${recipeId}/edit`}><button>Edit</button></Link> 
-              <button onClick={deleteRecipeHandler}>Delete</button>
-              </>
+                <div>
+                    <Link to={`/recipes/${recipeId}/edit`}><button>Edit</button></Link>
+                    <button onClick={deleteRecipeHandler}>Delete</button>
+                </div>
             )}
-            <button>Like</button>
-            {/* <p name="likes">Likes: {recipe.likes.length}</p> */}
-          </div>
-        )}
-        {email && (
-          <>
-          <h2>Add new comment:</h2>
-          <CommentsCreate 
-                email={email}
-                recipeId={recipeId}
-                onCreate={createCommentHandler}
-                />
-          </>
-        )}
-        <div>
-          {comments.length > 0 
-          ? (
-          <>
-          <p>Comments:</p>
-          <ul>
-            {comments.map(comment => 
-          <ShowComments comment={comment} email={email}/>)}
-          </ul>
-          </>
-          ) : <p>There are no comments for this recipe yet...</p> }   
-        </div>
-    </section>
-  );
+            {email && (
+                <>
+                    <h2>Add new comment:</h2>
+                    <CommentsCreate
+                        email={email}
+                        recipeId={recipeId}
+                        onCreate={createCommentHandler}
+                    />
+                </>
+            )}
+            <div>
+                {comments.length > 0
+                    ? (
+                        <>
+                            <p>Comments:</p>
+                            <ul>
+                                {comments.map(comment =>
+                                    <ShowComments comment={comment} email={email} />)}
+                            </ul>
+                        </>
+                    ) : <p>There are no comments for this recipe yet...</p>}
+            </div>
+        </section>
+    );
 }

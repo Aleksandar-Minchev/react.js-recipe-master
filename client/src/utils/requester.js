@@ -1,7 +1,7 @@
 export const requester = async (url, data, method, options = {}) => {
     options.method = method;
 
-    const authData = JSON.parse(localStorage.getItem('auth'));    
+    const authData = JSON.parse(localStorage.getItem('auth'));
 
     if (authData.accessToken) {
         options = {
@@ -13,7 +13,7 @@ export const requester = async (url, data, method, options = {}) => {
         }
     }
 
-    if (data){
+    if (data) {
         options = {
             ...options,
             headers: {
@@ -26,12 +26,12 @@ export const requester = async (url, data, method, options = {}) => {
 
     const response = await fetch(url, options);
     const responseContentType = response.headers.get('Content-Type');
-    
+
     if (!responseContentType) {
         return;
     }
-    
+
     const result = await response.json();
-    
+
     return result;
 }

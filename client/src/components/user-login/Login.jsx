@@ -23,21 +23,21 @@ export default function Login() {
 
     const [_, loginAction, isPending] = useActionState(loginHandler, { email: '', password: '' });
 
-    return(
+    return (
         <>
-        <h1>Login</h1>
-        <form action={loginAction}>
-        <label>Email:</label>
-        <input type="email" name="email" placeholder="Enter your email" required />
-        <br />
-        <label>Password:</label>
-        <input type="password" name="password" placeholder="Enter your password" required />
-        <br />
-        <button type="submit" disabled={isPending}>Login</button>
-        <p className="field">
-            <span>If you don't have profile click <Link to="/register">here</Link></span>
-        </p>
-        </form>
+            <h1>Login</h1>
+            <form action={loginAction}>
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="Enter your email" required />
+                <br />
+                <label>Password:</label>
+                <input type="password" name="password" placeholder="Enter your password" required />
+                <br />
+                <button type="submit" disabled={isPending}>Login</button>
+                <p className="field">
+                    <span>If you don't have profile click <Link to="/register">here</Link></span>
+                </p>
+            </form>
         </>
     )
 }
