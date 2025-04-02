@@ -2,10 +2,10 @@ import { Link, useNavigate, useParams } from "react-router";
 import { useDelete, UseOne } from "../../services/recipeService";
 import { usePageTitle } from "../../hooks/usePageTitle";
 import useAuth from "../../hooks/useAuth";
+import CommentsCreate from "../comments-create/CommentsCreate";
+import { useGetComments } from "../../services/commentService";
 
 import './Details.css'
-import CommentsCreate from "../comments-create/CommentsCreate";
-import { useCreateComment } from "../../services/commentService";
 
 export default function Details() {
     usePageTitle('Recipe Details');
@@ -13,9 +13,8 @@ export default function Details() {
     const {recipeId} = useParams();
     const { recipe } = UseOne(recipeId);
     const {deleteRecipe} = useDelete();
-    const {create} = useCreateComment();
-    const { email, userId } = useAuth();
-    
+    const { email, userId } = useAuth();    
+    const {comments} = useGetComments(recipeId);    
 
     const isOwner = userId === recipe._ownerId;
 
@@ -31,11 +30,7 @@ export default function Details() {
       navigate('/recipes');
     };
 
-    const createComment = async (formData) => {
-      const comment = formData.get('comment');
-      await create(recipeId, comment);
-      navigate(`/recipes/${recipeId}/details`)
-    }
+    
 
     return(
       <section id="recipe-details">
@@ -61,15 +56,22 @@ export default function Details() {
             {/* <p name="likes">Likes: {recipe.likes.length}</p> */}
           </div>
         )}
-        <h2>Add new comment:</h2>
-        {email && <CommentsCreate email={email}
+        {email && (
+          <>
+          <h2>Add new comment:</h2>
+          <CommentsCreate 
+                email={email}
                 recipeId={recipeId}
-                onSubmit={createComment}/>}
+                />
+          </>
+        )}
         <div>
           <p>Comments:</p>
             <ul>
-              <li>User 1: Great product!</li>
-              <li>User 2: I love it!</li>
+              {comments.length > 0 
+              ?  comments.map(comment => <li key={comment._id}>{comment.author}: {comment.comment}</li>)
+              : <li>No comments...</li>
+              }   
             </ul>
         </div>
     </section>
