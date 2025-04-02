@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { toast } from "react-toastify";
 import { requester } from "../utils/requester";
 
 
@@ -28,7 +29,8 @@ export const useGetComments = (recipeId) => {
             select: '_id,comment,author',
         });
         requester(`${baseUrl}?${searchParams.toString()}`, null, 'GET')
-            .then(setComments);
+            .then(setComments)
+            .catch(err => toast.error(err.message))
     }, [recipeId])
 
     return { comments, setComments }

@@ -36,7 +36,7 @@ export default function Header() {
                                         <Link to="/login"><button>Login</button></Link>
                                     </li>
                                     <li >
-                                        <p style={{ color: 'var(--light-blue)' }}>Hello, guest!</p>
+                                        <p>Hello, guest!</p>
                                     </li>
                                 </>
                             )

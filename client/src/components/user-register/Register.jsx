@@ -24,6 +24,7 @@ export default function Register() {
             const authData = await register(email, password);
 
             userLoginHandler(authData);
+            toast.success('Register and Login successful')
 
             navigate('/');
         } catch (err) {

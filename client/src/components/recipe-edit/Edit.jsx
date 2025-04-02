@@ -1,4 +1,6 @@
 import { Navigate, useNavigate, useParams } from "react-router";
+import { toast } from "react-toastify";
+
 import { usePageTitle } from "../../hooks/usePageTitle";
 import useAuth from "../../hooks/useAuth";
 import { useEdit, UseOne } from "../../services/recipeService";
@@ -14,10 +16,13 @@ export default function Edit() {
 
     const editRecipe = async (formData) => {
         const recipeData = Object.fromEntries(formData);
-
-        await edit(recipeId, recipeData);
-
-        navigate(`/recipes/${recipeId}/details`);
+        try {
+            await edit(recipeId, recipeData);
+            toast.success("You've just changed your recipe successfully")
+            navigate(`/recipes/${recipeId}/details`);
+        } catch (err) {
+            toast.error(err.message)
+        }
     };
 
     if (recipe._ownerId != undefined) {

@@ -1,6 +1,7 @@
 import { useContext, useEffect } from "react";
 import { UserContext } from "../contexts/userContext";
 import { requester } from "../utils/requester";
+import { toast } from "react-toastify";
 
 
 const baseUrl = 'http://localhost:3030/users';
@@ -19,17 +20,11 @@ export const useLogout = () => {
     useEffect(() => {
         if (!accessToken) {
             return;
-        }
-
-        const options = {
-            headers: {
-                'X-Authorization': accessToken,
-            }
         };
 
-        requester(`${baseUrl}/logout`, null, 'GET', options)
-            .finally(userLogoutHandler);
-
+        requester(`${baseUrl}/logout`, null, 'GET')
+            .finally(userLogoutHandler)
+            .catch(err => toast.error(err.message))
     }, [accessToken, userLogoutHandler]);
 
     return {

@@ -7,6 +7,7 @@ import { useGetComments } from "../../services/commentService";
 import ShowComments from "../comment-show/ShowComments";
 
 import './Details.css'
+import { toast } from "react-toastify";
 
 export default function Details() {
     usePageTitle('Recipe Details');
@@ -26,9 +27,13 @@ export default function Details() {
             return;
         }
 
-        await deleteRecipe(recipeId);
+        try {
+            await deleteRecipe(recipeId);
+            navigate('/recipes');
+        } catch (err) {
+            toast.error(err.message)
+        }
 
-        navigate('/recipes');
     };
 
     const createCommentHandler = (newComment) => {
@@ -70,7 +75,7 @@ export default function Details() {
                             <p>Comments:</p>
                             <ul>
                                 {comments.map(comment =>
-                                    <ShowComments comment={comment} email={email} />)}
+                                    <ShowComments key={comment._id} comment={comment} email={email} />)}
                             </ul>
                         </>
                     ) : <p>There are no comments for this recipe yet...</p>}

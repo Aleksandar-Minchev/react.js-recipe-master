@@ -1,4 +1,6 @@
 import { useNavigate } from "react-router";
+import { toast } from "react-toastify";
+
 import { useDeleteComment } from "../../services/commentService";
 
 export default function ShowComments({
@@ -7,21 +9,25 @@ export default function ShowComments({
 }) {
     const { deleteComment } = useDeleteComment();
     const navigate = useNavigate();
-    const isOwner = email === comment.author;
+    const isOwner = comment?.author === email;
 
     const commentDeleteHandler = async () => {
         const hasConfirm = confirm(`Are you sure you want to delete your comment: ${comment.comment}?`);
 
         if (!hasConfirm) {
             return;
-        }
-        await deleteComment(comment._id);
+        };
 
-        navigate(0);
+        try {
+            await deleteComment(comment._id);    
+            navigate(0);            
+        } catch (err) {
+            toast.error(err.message)
+        }
     };
 
     return (
-        <li key={comment._id}>
+        <li>
             {comment.author}: {comment.comment}
             {isOwner &&
                 <button

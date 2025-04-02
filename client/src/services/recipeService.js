@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { requester } from "../utils/requester";
+import { toast } from "react-toastify";
 
 const baseUrl = 'http://localhost:3030/data/recipeMaster';
 
@@ -22,6 +23,7 @@ export const UseGetAll = () => {
         });
         requester(`${baseUrl}?${searchParams.toString()}`, null, 'GET')
             .then(setRecipes)
+            .catch(err => toast.error(err.message))
     }, []);
 
     return { recipes };
@@ -32,7 +34,8 @@ export const UseOne = (recipeId) => {
 
     useEffect(() => {
         requester(`${baseUrl}/${recipeId}`, null, 'GET')
-            .then(setRecipe);
+            .then(setRecipe)
+            .catch(err => toast.error(err.message))
     }, [recipeId])
 
     return {
@@ -51,7 +54,8 @@ export const UseGetLatest = () => {
             select: '_id,imageUrl,title,description',
         });
         requester(`${baseUrl}?${searchParams.toString()}`, null, 'GET')
-            .then(setLatestRecipes);
+            .then(setLatestRecipes)
+            .catch(err => toast.error(err.message));
     }, [])
 
     return { latestRecipes };

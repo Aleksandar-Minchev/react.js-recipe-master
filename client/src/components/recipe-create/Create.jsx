@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router";
 import { useCreateRecipe } from "../../services/recipeService";
 import { usePageTitle } from "../../hooks/usePageTitle";
+import { toast } from "react-toastify";
 
 export default function Create() {
     usePageTitle('Create Recipe');
@@ -10,9 +11,13 @@ export default function Create() {
     const createRecipe = async (formData) => {
         const recipeData = Object.fromEntries(formData);
 
-        await create(recipeData);
-
-        navigate('/recipes');
+        try {
+            await create(recipeData);
+            toast.success("You've just created your recipe successfully")
+            navigate('/recipes');
+        } catch (err) {
+            toast.error(err.message)
+        }
     };
     return (
         <>
