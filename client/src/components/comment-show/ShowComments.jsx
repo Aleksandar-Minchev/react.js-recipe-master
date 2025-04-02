@@ -9,12 +9,12 @@ export default function ShowComments({
     const navigate = useNavigate();
     const isOwner = email === comment.author;
 
-
-    const commentEditHandler = () => {
-
-    };
-
     const commentDeleteHandler = async () => {
+        const hasConfirm = confirm(`Are you sure you want to delete your comment: ${comment.comment}?`);
+
+        if (!hasConfirm) {
+            return;
+        }
         await deleteComment(comment._id);
 
         navigate(0);
@@ -24,22 +24,13 @@ export default function ShowComments({
         <li key={comment._id}>
             {comment.author}: {comment.comment}
             {isOwner &&
-                <>
-                    <button
-                        className="edit-btn"
-                        onClick={() => commentEditHandler(comment._id)}
-                        aria-label="Edit comment"
-                    >
-                        &#9999; {/* Pencil icon */}
-                    </button>
-                    <button
-                        className="remove-btn"
-                        onClick={() => commentDeleteHandler(comment._id)}
-                        aria-label="Remove comment"
-                    >
-                        &#10006; {/* X icon */}
-                    </button>
-                </>
+                <button
+                    className="remove-btn"
+                    onClick={() => commentDeleteHandler(comment._id)}
+                    aria-label="Remove comment"
+                >
+                    &#10006; {/* X icon */}
+                </button>
             }
         </li>
     )

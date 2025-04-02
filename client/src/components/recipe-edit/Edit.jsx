@@ -25,7 +25,7 @@ export default function Edit() {
         if (!isOwner) {
             return <Navigate to="/recipes" />
         }
-    }
+    };
 
     return (
         <>
