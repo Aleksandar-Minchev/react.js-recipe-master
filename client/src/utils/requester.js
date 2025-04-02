@@ -1,5 +1,3 @@
-import { toast } from "react-toastify";
-
 export const requester = async (url, data, method, options = {}) => {
     options.method = method;
 
@@ -26,25 +24,18 @@ export const requester = async (url, data, method, options = {}) => {
         }
     }
 
-    try {
-        const response = await fetch(url, options);     
-        const responseContentType = response.headers.get('Content-Type');
-        if (!responseContentType) {
-            return;
-        };
-    
-        if (!response.ok){
-            const error = await response.json();
-            throw error;
-        };
-    
-        const result = await response.json();
-    
-        return result;
-        
-    } catch (err) {      
-        toast.error(err.message);
-    } 
-   
-   
+    const response = await fetch(url, options);
+    const responseContentType = response.headers.get('Content-Type');
+    if (!responseContentType) {
+        return;
+    };
+
+    if (!response.ok) {
+        const error = await response.json();
+        throw error;
+    };
+
+    const result = await response.json();
+
+    return result;
 }

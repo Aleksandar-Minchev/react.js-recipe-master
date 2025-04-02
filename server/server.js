@@ -1346,310 +1346,6 @@
     	}
     };
     var seedData = {
-    	recipes: {
-    		"3987279d-0ad4-4afb-8ca9-5b256ae3b298": {
-    			_ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-    			name: "Easy Lasagna",
-    			img: "assets/lasagna.jpg",
-    			ingredients: [
-    				"1 tbsp Ingredient 1",
-    				"2 cups Ingredient 2",
-    				"500 g  Ingredient 3",
-    				"25 g Ingredient 4"
-    			],
-    			steps: [
-    				"Prepare ingredients",
-    				"Mix ingredients",
-    				"Cook until done"
-    			],
-    			_createdOn: 1613551279012
-    		},
-    		"8f414b4f-ab39-4d36-bedb-2ad69da9c830": {
-    			_ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-    			name: "Grilled Duck Fillet",
-    			img: "assets/roast.jpg",
-    			ingredients: [
-    				"500 g  Ingredient 1",
-    				"3 tbsp Ingredient 2",
-    				"2 cups Ingredient 3"
-    			],
-    			steps: [
-    				"Prepare ingredients",
-    				"Mix ingredients",
-    				"Cook until done"
-    			],
-    			_createdOn: 1613551344360
-    		},
-    		"985d9eab-ad2e-4622-a5c8-116261fb1fd2": {
-    			_ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-    			name: "Roast Trout",
-    			img: "assets/fish.jpg",
-    			ingredients: [
-    				"4 cups Ingredient 1",
-    				"1 tbsp Ingredient 2",
-    				"1 tbsp Ingredient 3",
-    				"750 g  Ingredient 4",
-    				"25 g Ingredient 5"
-    			],
-    			steps: [
-    				"Prepare ingredients",
-    				"Mix ingredients",
-    				"Cook until done"
-    			],
-    			_createdOn: 1613551388703
-    		}
-    	},
-    	comments: {
-    		"0a272c58-b7ea-4e09-a000-7ec988248f66": {
-    			_ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-    			content: "Great recipe!",
-    			recipeId: "8f414b4f-ab39-4d36-bedb-2ad69da9c830",
-    			_createdOn: 1614260681375,
-    			_id: "0a272c58-b7ea-4e09-a000-7ec988248f66"
-    		}
-    	},
-    	records: {
-    		i01: {
-    			name: "John1",
-    			val: 1,
-    			_createdOn: 1613551388703
-    		},
-    		i02: {
-    			name: "John2",
-    			val: 1,
-    			_createdOn: 1613551388713
-    		},
-    		i03: {
-    			name: "John3",
-    			val: 2,
-    			_createdOn: 1613551388723
-    		},
-    		i04: {
-    			name: "John4",
-    			val: 2,
-    			_createdOn: 1613551388733
-    		},
-    		i05: {
-    			name: "John5",
-    			val: 2,
-    			_createdOn: 1613551388743
-    		},
-    		i06: {
-    			name: "John6",
-    			val: 3,
-    			_createdOn: 1613551388753
-    		},
-    		i07: {
-    			name: "John7",
-    			val: 3,
-    			_createdOn: 1613551388763
-    		},
-    		i08: {
-    			name: "John8",
-    			val: 2,
-    			_createdOn: 1613551388773
-    		},
-    		i09: {
-    			name: "John9",
-    			val: 3,
-    			_createdOn: 1613551388783
-    		},
-    		i10: {
-    			name: "John10",
-    			val: 1,
-    			_createdOn: 1613551388793
-    		}
-    	},
-    	catches: {
-    		"07f260f4-466c-4607-9a33-f7273b24f1b4": {
-    			_ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-    			angler: "Paulo Admorim",
-    			weight: 636,
-    			species: "Atlantic Blue Marlin",
-    			location: "Vitoria, Brazil",
-    			bait: "trolled pink",
-    			captureTime: 80,
-    			_createdOn: 1614760714812,
-    			_id: "07f260f4-466c-4607-9a33-f7273b24f1b4"
-    		},
-    		"bdabf5e9-23be-40a1-9f14-9117b6702a9d": {
-    			_ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-    			angler: "John Does",
-    			weight: 554,
-    			species: "Atlantic Blue Marlin",
-    			location: "Buenos Aires, Argentina",
-    			bait: "trolled pink",
-    			captureTime: 120,
-    			_createdOn: 1614760782277,
-    			_id: "bdabf5e9-23be-40a1-9f14-9117b6702a9d"
-    		}
-    	},
-    	furniture: {
-    	},
-    	orders: {
-    	},
-    	movies: {
-    		"1240549d-f0e0-497e-ab99-eb8f703713d7": {
-    			_ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-    			title: "Black Widow",
-    			description: "Natasha Romanoff aka Black Widow confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Comes on the screens 2020.",
-    			img: "https://miro.medium.com/max/735/1*akkAa2CcbKqHsvqVusF3-w.jpeg",
-    			_createdOn: 1614935055353,
-    			_id: "1240549d-f0e0-497e-ab99-eb8f703713d7"
-    		},
-    		"143e5265-333e-4150-80e4-16b61de31aa0": {
-    			_ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-    			title: "Wonder Woman 1984",
-    			description: "Diana must contend with a work colleague and businessman, whose desire for extreme wealth sends the world down a path of destruction, after an ancient artifact that grants wishes goes missing.",
-    			img: "https://pbs.twimg.com/media/ETINgKwWAAAyA4r.jpg",
-    			_createdOn: 1614935181470,
-    			_id: "143e5265-333e-4150-80e4-16b61de31aa0"
-    		},
-    		"a9bae6d8-793e-46c4-a9db-deb9e3484909": {
-    			_ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-    			title: "Top Gun 2",
-    			description: "After more than thirty years of service as one of the Navy's top aviators, Pete Mitchell is where he belongs, pushing the envelope as a courageous test pilot and dodging the advancement in rank that would ground him.",
-    			img: "https://i.pinimg.com/originals/f2/a4/58/f2a458048757bc6914d559c9e4dc962a.jpg",
-    			_createdOn: 1614935268135,
-    			_id: "a9bae6d8-793e-46c4-a9db-deb9e3484909"
-    		}
-    	},
-    	likes: {
-    	},
-    	ideas: {
-    		"833e0e57-71dc-42c0-b387-0ce0caf5225e": {
-    			_ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-    			title: "Best Pilates Workout To Do At Home",
-    			description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima possimus eveniet ullam aspernatur corporis tempore quia nesciunt nostrum mollitia consequatur. At ducimus amet aliquid magnam nulla sed totam blanditiis ullam atque facilis corrupti quidem nisi iusto saepe, consectetur culpa possimus quos? Repellendus, dicta pariatur! Delectus, placeat debitis error dignissimos nesciunt magni possimus quo nulla, fuga corporis maxime minus nihil doloremque aliquam quia recusandae harum. Molestias dolorum recusandae commodi velit cum sapiente placeat alias rerum illum repudiandae? Suscipit tempore dolore autem, neque debitis quisquam molestias officia hic nesciunt? Obcaecati optio fugit blanditiis, explicabo odio at dicta asperiores distinctio expedita dolor est aperiam earum! Molestias sequi aliquid molestiae, voluptatum doloremque saepe dignissimos quidem quas harum quo. Eum nemo voluptatem hic corrupti officiis eaque et temporibus error totam numquam sequi nostrum assumenda eius voluptatibus quia sed vel, rerum, excepturi maxime? Pariatur, provident hic? Soluta corrupti aspernatur exercitationem vitae accusantium ut ullam dolor quod!",
-    			img: "./images/best-pilates-youtube-workouts-2__medium_4x3.jpg",
-    			_createdOn: 1615033373504,
-    			_id: "833e0e57-71dc-42c0-b387-0ce0caf5225e"
-    		},
-    		"247efaa7-8a3e-48a7-813f-b5bfdad0f46c": {
-    			_ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-    			title: "4 Eady DIY Idea To Try!",
-    			description: "Similique rem culpa nemo hic recusandae perspiciatis quidem, quia expedita, sapiente est itaque optio enim placeat voluptates sit, fugit dignissimos tenetur temporibus exercitationem in quis magni sunt vel. Corporis officiis ut sapiente exercitationem consectetur debitis suscipit laborum quo enim iusto, labore, quod quam libero aliquid accusantium! Voluptatum quos porro fugit soluta tempore praesentium ratione dolorum impedit sunt dolores quod labore laudantium beatae architecto perspiciatis natus cupiditate, iure quia aliquid, iusto modi esse!",
-    			img: "./images/brightideacropped.jpg",
-    			_createdOn: 1615033452480,
-    			_id: "247efaa7-8a3e-48a7-813f-b5bfdad0f46c"
-    		},
-    		"b8608c22-dd57-4b24-948e-b358f536b958": {
-    			_ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-    			title: "Dinner Recipe",
-    			description: "Consectetur labore et corporis nihil, officiis tempora, hic ex commodi sit aspernatur ad minima? Voluptas nesciunt, blanditiis ex nulla incidunt facere tempora laborum ut aliquid beatae obcaecati quidem reprehenderit consequatur quis iure natus quia totam vel. Amet explicabo quidem repellat unde tempore et totam minima mollitia, adipisci vel autem, enim voluptatem quasi exercitationem dolor cum repudiandae dolores nostrum sit ullam atque dicta, tempora iusto eaque! Rerum debitis voluptate impedit corrupti quibusdam consequatur minima, earum asperiores soluta. A provident reiciendis voluptates et numquam totam eveniet! Dolorum corporis libero dicta laborum illum accusamus ullam?",
-    			img: "./images/dinner.jpg",
-    			_createdOn: 1615033491967,
-    			_id: "b8608c22-dd57-4b24-948e-b358f536b958"
-    		}
-    	},
-    	catalog: {
-    		"53d4dbf5-7f41-47ba-b485-43eccb91cb95": {
-    			_ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-    			make: "Table",
-    			model: "Swedish",
-    			year: 2015,
-    			description: "Medium table",
-    			price: 235,
-    			img: "./images/table.png",
-    			material: "Hardwood",
-    			_createdOn: 1615545143015,
-    			_id: "53d4dbf5-7f41-47ba-b485-43eccb91cb95"
-    		},
-    		"f5929b5c-bca4-4026-8e6e-c09e73908f77": {
-    			_ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-    			make: "Sofa",
-    			model: "ES-549-M",
-    			year: 2018,
-    			description: "Three-person sofa, blue",
-    			price: 1200,
-    			img: "./images/sofa.jpg",
-    			material: "Frame - steel, plastic; Upholstery - fabric",
-    			_createdOn: 1615545572296,
-    			_id: "f5929b5c-bca4-4026-8e6e-c09e73908f77"
-    		},
-    		"c7f51805-242b-45ed-ae3e-80b68605141b": {
-    			_ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-    			make: "Chair",
-    			model: "Bright Dining Collection",
-    			year: 2017,
-    			description: "Dining chair",
-    			price: 180,
-    			img: "./images/chair.jpg",
-    			material: "Wood laminate; leather",
-    			_createdOn: 1615546332126,
-    			_id: "c7f51805-242b-45ed-ae3e-80b68605141b"
-    		}
-    	},
-    	teams: {
-    		"34a1cab1-81f1-47e5-aec3-ab6c9810efe1": {
-    			_ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-    			name: "Storm Troopers",
-    			logoUrl: "/assets/atat.png",
-    			description: "These ARE the droids we're looking for",
-    			_createdOn: 1615737591748,
-    			_id: "34a1cab1-81f1-47e5-aec3-ab6c9810efe1"
-    		},
-    		"dc888b1a-400f-47f3-9619-07607966feb8": {
-    			_ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-    			name: "Team Rocket",
-    			logoUrl: "/assets/rocket.png",
-    			description: "Gotta catch 'em all!",
-    			_createdOn: 1615737655083,
-    			_id: "dc888b1a-400f-47f3-9619-07607966feb8"
-    		},
-    		"733fa9a1-26b6-490d-b299-21f120b2f53a": {
-    			_ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-    			name: "Minions",
-    			logoUrl: "/assets/hydrant.png",
-    			description: "Friendly neighbourhood jelly beans, helping evil-doers succeed.",
-    			_createdOn: 1615737688036,
-    			_id: "733fa9a1-26b6-490d-b299-21f120b2f53a"
-    		}
-    	},
-    	members: {
-    		"cc9b0a0f-655d-45d7-9857-0a61c6bb2c4d": {
-    			_ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-    			teamId: "34a1cab1-81f1-47e5-aec3-ab6c9810efe1",
-    			status: "member",
-    			_createdOn: 1616236790262,
-    			_updatedOn: 1616236792930
-    		},
-    		"61a19986-3b86-4347-8ca4-8c074ed87591": {
-    			_ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-    			teamId: "dc888b1a-400f-47f3-9619-07607966feb8",
-    			status: "member",
-    			_createdOn: 1616237188183,
-    			_updatedOn: 1616237189016
-    		},
-    		"8a03aa56-7a82-4a6b-9821-91349fbc552f": {
-    			_ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-    			teamId: "733fa9a1-26b6-490d-b299-21f120b2f53a",
-    			status: "member",
-    			_createdOn: 1616237193355,
-    			_updatedOn: 1616237195145
-    		},
-    		"9be3ac7d-2c6e-4d74-b187-04105ab7e3d6": {
-    			_ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-    			teamId: "dc888b1a-400f-47f3-9619-07607966feb8",
-    			status: "member",
-    			_createdOn: 1616237231299,
-    			_updatedOn: 1616237235713
-    		},
-    		"280b4a1a-d0f3-4639-aa54-6d9158365152": {
-    			_ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
-    			teamId: "dc888b1a-400f-47f3-9619-07607966feb8",
-    			status: "member",
-    			_createdOn: 1616237257265,
-    			_updatedOn: 1616237278248
-    		},
-    		"e797fa57-bf0a-4749-8028-72dba715e5f8": {
-    			_ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
-    			teamId: "34a1cab1-81f1-47e5-aec3-ab6c9810efe1",
-    			status: "member",
-    			_createdOn: 1616237272948,
-    			_updatedOn: 1616237293676
-    		}
-    	},
         recipeMaster: [
             {
                 "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
@@ -1659,7 +1355,7 @@
                 "ingredients": "4 large eggs\n1 tablespoon of butter or a splash of olive oil\nSalt and pepper to taste\nOptional: a splash of milk or cream for extra creaminess",
                 "instructions": "Crack and Whisk: Start by cracking your eggs into a bowl. Use a fork or whisk to beat the eggs until the yolks and whites are fully combined. Whisking also adds air to the eggs, which helps to make them fluffy.\nHeat the Pan: Place a non-stick pan over low heat. Add a tablespoon of butter or a splash of olive oil. Let the butter melt gently, ensuring it doesn’t brown.\nAdd the Eggs: Pour the beaten eggs into the pan. Do not stir immediately. Allow the eggs to sit undisturbed for a few moments.\nStir Gently: Using a spatula, gently stir the eggs, pushing from the edges of the pan towards the center. Keep the movements slow and steady, folding the eggs rather than vigorously stirring them.\nRemove from Heat Early: The eggs will continue to cook even after you remove them from the heat, so take them off when they are still slightly runny. This ensures that they remain soft and creamy by the time they are ready to serve.\nSeason and Serve: Add a pinch of salt and pepper to taste. Serve immediately with your favorite breakfast sides.",
                 "_createdOn": 1743205562841,
-                "_id": "34ed10b2-5bcf-867b-8561-45695bd78fc0"
+                "_id": "0"
             },
             {
                 "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
@@ -1669,7 +1365,7 @@
                 "ingredients": "1 lb ground beef\n\n1 small onion, diced\n\n2 cloves garlic, minced\n\n1 packet taco seasoning\n\n1 can (15 oz) refried beans\n\n1 can (10 oz) diced tomatoes with green chilies\n\n1 cup salsa\n\n1 cup corn kernels (canned or frozen)\n\n8 large flour tortillas\n\n2 cups shredded Mexican blend cheese\n\n1 cup sour cream\n\n1/4 cup chopped cilantro (for garnish)\n\nOlive oil (for sautéing)",
                 "instructions": "Preheat your oven to 375°F (190°C). Grease a 9×13-inch baking dish.\nCook the ground beef in a skillet over medium heat with a bit of olive oil. Add the onion and garlic, sautéing until softened.\nStir in the taco seasoning, diced tomatoes, and corn. Let it simmer for 5-7 minutes until flavors combine.\nIn a bowl, mix the refried beans with half of the salsa.\nLayer the lasagna:Spread a thin layer of the beef mixture on the bottom of the baking dish.\nPlace a tortilla on top, followed by a layer of refried beans, beef mixture, shredded cheese, and a few dollops of sour cream.\nRepeat the layers, finishing with a tortilla topped with salsa and a generous sprinkle of cheese.\nBake for 25-30 minutes or until the cheese is bubbly and golden.\nLet it rest for 10 minutes before slicing. Garnish with cilantro and serve hot.",
                 "_createdOn": 1743206285615,
-                "_id": "34ed10b2-8ecf-477b-8561-45695bd78fc0"
+                "_id": "1"
             },
             {
                 "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
@@ -1679,7 +1375,7 @@
                 "ingredients": "2 large chicken breasts, sliced thinly\n\n1 jar (16 oz) of Alfredo sauce (use your favorite brand)\n\n12 oz fettuccine or your choice of pasta\n\n2 tbsp olive oil\n\n2 garlic cloves, minced\n\n1/2 cup grated Parmesan cheese\n\n1/4 cup heavy cream (optional for extra creaminess)\n\nSalt and pepper to taste\n\nFresh parsley or basil for garnish",
                 "instructions": "Prepare the Pasta:\nCook pasta according to the package instructions. Reserve 1/2 cup of pasta water, drain, and set aside.\nCook the Chicken:\nHeat olive oil in a large skillet over medium heat.\nSeason chicken slices with salt and pepper.\nSauté the chicken for 4–5 minutes per side until golden brown and cooked through. Remove and set aside.\nMake the Sauce:\nIn the same skillet, add minced garlic and sauté for 30 seconds until fragrant.\nPour the jar of Alfredo sauce into the skillet. Add the heavy cream (optional) and stir.\nSimmer the sauce for 2–3 minutes, adjusting consistency with reserved pasta water if needed.\nCombine Everything:\nAdd the cooked chicken back into the skillet.\nToss in the cooked pasta and mix well to coat evenly with the sauce.\nServe:\nSprinkle grated Parmesan on top.\nGarnish with fresh parsley or basil before serving.",
                 "_createdOn": 1743244806729,
-                "_id": "34ed10b2-8ecf-477b-8963-59595bd78fc0"
+                "_id": "2"
             },
             {
                 "_ownerId": "b46675fa-a86d-43ef-9b80-9398df4d26a9",
@@ -1689,7 +1385,7 @@
                 "ingredients": "4 large egg whites\n\n¼ cup cottage cheese\n\n2 tbsp shredded Monterey Jack cheese\n\n2 tbsp shredded Gruyère cheese\n\n1 tbsp diced red bell pepper\n\n1 tbsp diced green onion\n\n½ tsp salt\n\n¼ tsp black pepper\n\nOlive oil spray",
                 "instructions": "Preheat your oven to 325°F (160°C) and lightly grease a muffin tin with olive oil spray.\nIn a blender, combine the egg whites, cottage cheese, Monterey Jack, Gruyère, salt, and pepper. Blend until smooth.\nPour the egg mixture into the muffin tin, filling each cup about ¾ full.\nEvenly distribute the diced bell peppers and green onions into each muffin cup.\nBake for 20–25 minutes, or until the egg bites are set and slightly golden on top.\nLet cool for 5 minutes before carefully removing the bites from the tin. Serve warm or store for meal prep.",
                 "_createdOn": 1743245811333,
-                "_id": "34ed10b2-8ecf-477b-5469-59595bd78fc0"
+                "_id": "3"
             },
             {
                 "_ownerId": "b46675fa-a86d-43ef-9b80-9398df4d26a9",
@@ -1699,7 +1395,7 @@
                 "ingredients": "12 chicken wings (whole)\n\n2 tbsp olive oil\n\n1 tbsp lemon zest\n\n2 tbsp fresh lemon juice\n\n1 tbsp lemon pepper seasoning\n\n1 tsp garlic powder\n\n1/2 tsp paprika\n\nSalt and black pepper to taste\n\nFresh parsley (optional, for garnish)",
                 "instructions": "Preheat the oven to 400°F (200°C).\nPat the chicken wings dry with paper towels to ensure they crisp up in the oven.\nIn a large bowl, toss the wings with olive oil, lemon zest, lemon juice, lemon pepper seasoning, garlic powder, paprika, salt, and black pepper.\nArrange the wings in a single layer on a baking sheet lined with parchment paper or foil.\nBake for 25-30 minutes, flipping the wings halfway through, until golden and crispy.\nRemove from the oven, and garnish with fresh parsley if desired. Serve hot and enjoy!",
                 "_createdOn": 1743250145460,
-                "_id": "34ed10b2-8ecf-477b-8051-66555bd78fc0"
+                "_id": "4"
             },
             {
                 "_ownerId": "b46675fa-a86d-43ef-9b80-9398df4d26a9",
@@ -1709,7 +1405,7 @@
                 "ingredients": "2 large chicken breasts, cubed\n\n8 oz cream cheese, softened\n\n1 tbsp olive oil\n\n1 tsp garlic powder\n\n½ tsp onion powder\n\n½ tsp smoked paprika\n\nSalt and pepper to taste\n\n½ cup shredded cheddar cheese\n\n¼ cup diced green onions (optional)\n\n1 cup chicken broth\n\n1 tbsp fresh parsley, chopped (for garnish)",
                 "instructions": "Sear the Chicken: Heat olive oil in a large skillet over medium-high heat. Season chicken cubes with salt, pepper, garlic powder, onion powder, and paprika, and cook for 5–7 minutes until browned on all sides.\nAdd Cream Cheese: Reduce heat to medium, then add the cream cheese and chicken broth to the skillet, stirring until the cream cheese melts and the sauce is creamy.\nAdd Cheddar: Stir in shredded cheddar cheese and allow it to melt into the sauce. Continue cooking for an additional 5–10 minutes until the chicken is fully cooked and the sauce thickens.\nServe: Remove from heat and garnish with green onions and fresh parsley. Serve hot over rice, pasta, or with crusty bread.",
                 "_createdOn": 1743250200457,
-                "_id": "34ed10b2-8ecf-477b-8051-59595bd78fc0"
+                "_id": "5"
             },
             {
                 "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
@@ -1719,7 +1415,177 @@
                 "ingredients": "\n4 cups water\n\n1/4 cup kosher salt\n\n1/4 cup brown sugar (or white sugar)\n\n1 teaspoon black peppercorns\n\n2 cloves garlic, minced\n\n2 teaspoons onion powder\n\n2 teaspoons dill (fresh or dried)\n\n1 bay leaf\n\nOptional: 1 teaspoon paprika or smoked paprika for added flavor",
                 "instructions": "Prepare the Brine:\nIn a large bowl, combine water, kosher salt, and brown sugar. Stir until fully dissolved.\nAdd Flavorings:\nMix in black peppercorns, garlic, onion powder, dill, bay leaf, and paprika.\nBrine the Salmon:\nPlace salmon fillets in a large zip-top bag or shallow dish. Pour the brine over the salmon until fully submerged.\nRefrigerate:\nCover or seal and refrigerate for 4–12 hours. For a stronger flavor, opt for a longer brining time.\nRinse and Dry:\nRemove salmon from the brine and rinse under cold water. Pat dry with paper towels.\nSmoke the Salmon:\nSmoke salmon at 180°F (82°C) for 3–4 hours until the internal temperature reaches 145°F (63°C).\nServe:\nLet the smoked salmon cool slightly before slicing and serving.",
                 "_createdOn": 1743427763906,
-                "_id": "51ed09b2-8ecf-467b-8051-59595bd78fc0"
+                "_id": "6"
+            },
+            {
+                "_ownerId": "a58ee266-024b-488f-ad46-2813ce8c02bb",
+                "title": "Lobster Pasta Recipe",
+                "imageUrl": "https://therecipemaster.com/wp-content/uploads/2024/11/lobster-pasta-recipe.webp",
+                "description": "Indulge in a delicious and easy-to-make lobster pasta recipe that brings the elegance of seafood to your table. This dish features tender pasta tossed with juicy lobster, a garlic-butter sauce, and Parmesan cheese, creating a blend of flavors that elevate every bite. If you’re looking for the best lobster and pasta recipes to impress your guests or enjoy a special night in, this recipe is perfect for you.",
+                "ingredients": "1 lb (450g) linguine or fettuccine pasta\n\n2 lobster tails, cooked and chopped\n\n3 tbsp unsalted butter\n\n2 tbsp olive oil\n\n4 cloves garlic, minced\n\n1 cup heavy cream\n\n1/2 cup grated Parmesan cheese\n\n1/2 cup dry white wine (optional)\n\n1 tbsp lemon juice\n\n1/4 cup chopped parsley\n\nSalt and black pepper, to taste\n\nRed pepper flakes (optional, for heat)",
+                "instructions": "Prepare the pasta: Cook pasta in salted boiling water according to package instructions until al dente. Drain, reserving 1/2 cup of pasta water.\nCook the lobster: In a large skillet over medium heat, melt butter with olive oil. Add garlic and cook for about 1 minute until fragrant. Add the chopped lobster meat and sauté for 2-3 minutes, until lobster is heated and slightly golden.\nMake the sauce: Pour in white wine and let it simmer for 2 minutes, reducing slightly. Add heavy cream and Parmesan, stirring continuously until the sauce thickens. Season with salt, black pepper, and red pepper flakes, if desired.\nCombine: Add the cooked pasta and reserved pasta water, tossing everything to coat the pasta evenly in the sauce.\nFinish and serve: Stir in lemon juice and parsley for freshness. Serve hot with extra Parmesan on top.",
+                "_createdOn": 1743622203290,
+                "_id": "f59720c2-59c9-4eb6-af8f-af5bf1b3773e"
+            },
+            {
+                "_ownerId": "a58ee266-024b-488f-ad46-2813ce8c02bb",
+                "title": "Smoked Chuck Roast Recipe",
+                "imageUrl": "https://therecipemaster.com/wp-content/uploads/2024/11/Smoked-Chuck-Roast-Recipe2.webp",
+                "description": "A smoked chuck roast recipe is the perfect way to elevate a humble cut of beef into a smoky, tender delight. Known as the “poor man’s brisket,” a chuck roast is budget-friendly yet rich in flavor. Whether you’re an experienced pitmaster or new to BBQ, this recipe will guide you to smoky perfection. Serve it sliced for a hearty meal or shredded for sandwiches and tacos. It’s versatile, flavorful, and perfect for any occasion!",
+                "ingredients": "3–4 lb chuck roast\n\n2 tbsp olive oil\n2 tbsp smoked paprika\n\n1 tbsp garlic powder\n\n1 tbsp onion powder\n\n1 tbsp brown sugar\n\n1 tsp black pepper\n\n1 tsp kosher salt\n\n1 tsp chili powder\n\n1/2 tsp cayenne pepper (optional)\n",
+                "instructions": "Prepare the Roast:\nPat the chuck roast dry with paper towels. Rub olive oil all over the roast to help the spices adhere.\nApply the Dry Rub:\nMix all the dry rub ingredients in a bowl. Generously coat the roast on all sides, pressing the spices into the meat.\nPrepare the Smoker:\nPreheat your smoker to 225°F (107°C). Add your wood chips for a rich, smoky flavor.\nSmoke the Roast:\nPlace the chuck roast directly on the smoker grate. Smoke for about 3 hours, spritzing with beef broth or apple juice every hour to keep it moist.\nWrap the Roast:\nOnce the roast reaches an internal temperature of 165°F (74°C), remove it from the smoker and wrap it tightly in aluminum foil.\nContinue Smoking:\nReturn the wrapped roast to the smoker and continue cooking until the internal temperature reaches 200–205°F (93–96°C). This ensures the meat is tender and easily shredded.\nRest and Serve:\nRemove the roast from the smoker and let it rest, wrapped, for 30 minutes. Slice or shred and serve with your favorite BBQ sides.",
+                "_createdOn": 1743622287570,
+                "_id": "946e3a59-754c-4c78-95cd-140c0dc11b76"
+            },
+            {
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "title": "A Hearty Filipino Stir-Fried Ground Meat Delight",
+                "imageUrl": "https://therecipemaster.com/wp-content/uploads/2025/01/Giniling-Recipe-3.webp",
+                "description": "When it comes to Filipino comfort food, few dishes evoke as much warmth and nostalgia as Giniling recipe. This savory dish is a staple in many Filipino households, often served during family gatherings, special occasions, or simply as a quick and satisfying weeknight dinner. If you’re not familiar with it, Giniling is a flavorful stir-fry made from ground meat—beef, or chicken—mixed with vegetables and simmered in a delicious blend of seasonings.",
+                "ingredients": "500g ground meat (chicken or beef)\n\n1 large onion, chopped\n\n4 cloves garlic, minced\n\n2 medium tomatoes, diced\n\n1 large potato, peeled and diced\n\n1 small carrot, peeled and diced\n\n1/2 cup green peas\n\n1/4 cup soy sauce\n\n1 tablespoon fish sauce\n\n1/4 cup water\n\nSalt and pepper, to taste\n\n1 tablespoon vegetable oil\n\n1/2 cup cooked hard-boiled eggs (optional)\n\n1/2 cup chopped bell peppers (optional)",
+                "instructions": "Prepare the ingredients: Chop the onions, garlic, tomatoes, carrots, and potatoes into small pieces. If you’re using hard-boiled eggs or bell peppers, set those aside.\nSauté the aromatics: In a large pan, heat the oil over medium heat. Add the onions and garlic and cook until they are fragrant and softened, about 2-3 minutes.\nCook the meat: Add the ground meat to the pan and cook, breaking it up into small pieces as it browns. Stir frequently until the meat is fully cooked, about 5-7 minutes.\nAdd the vegetables: Stir in the diced potatoes, carrots, and tomatoes, followed by the soy sauce and fish sauce. Pour in the water and bring to a simmer. Let it cook for about 10-15 minutes, or until the vegetables are tender.\nAdd peas and seasonings: Once the vegetables are cooked through, add the green peas and season with salt and pepper to taste. You can also add any optional ingredients like bell peppers or hard-boiled eggs at this stage. Stir well to combine.\nServe: Remove from heat and serve hot with steamed rice, or wrap it in lettuce leaves for a low-carb option. Enjoy your meal!",
+                "_createdOn": 1743622364189,
+                "_id": "c82233c3-fcb9-417b-8342-3316f9e0d208"
+            },
+            {
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "title": "Crispy and Delicious Squash",
+                "imageUrl": "https://therecipemaster.com/wp-content/uploads/2024/09/Fried-Squash-Recipe-1.webp",
+                "description": "Few things capture the essence of summer like a plate of crispy fried squash fresh out of the skillet. Whether you’re reminiscing about childhood meals at your grandmother’s house or simply looking for a quick and satisfying side dish, this fried squash recipe will bring you the ultimate crispy, golden goodness.",
+                "ingredients": "\n2 medium yellow squash, sliced into 1/4-inch rounds (You can use green squash or zucchini if available)\n\n1 cup all-purpose flour\n\n1 cup cornmeal\n\n1 tsp salt\n\n1/2 tsp black pepper\n\n1/2 tsp garlic powder\n\n1/2 tsp paprika\n\n2 large eggs\n\n1/4 cup milk\n\nVegetable oil for frying",
+                "instructions": "Prepare the Coating: In a shallow dish, combine the flour, cornmeal, salt, pepper, garlic powder, and paprika.\nPrepare the Egg Wash: In another shallow dish, whisk together the eggs and milk.\nCoat the Squash: Dip each squash slice into the flour mixture, then into the egg wash, and back into the flour mixture, ensuring each slice is well-coated.\nHeat the Oil: In a large skillet, heat about 1/2 inch of vegetable oil over medium-high heat until hot.\nFry the Squash: Fry the squash slices in batches, about 2-3 minutes per side, until golden brown and crispy. Avoid overcrowding the skillet.\nDrain and Serve: Remove the fried squash from the skillet and place on a paper towel-lined plate to drain excess oil. Serve immediately.",
+                "_createdOn": 1743622418821,
+                "_id": "6a62d8db-32e8-4149-b097-98c532439f75"
+            }
+        ],
+        recipeComments: [
+            {
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "recipeId": "0",
+                "comment": "Delicious!",
+                "author": "peter@abv.bg",
+                "_createdOn": 1743622555157,
+                "_id": "89b4ee24-f46b-4447-a71c-e7c66cf018a9"
+            },
+            {
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "recipeId": "1",
+                "comment": "Nice idea!",
+                "author": "peter@abv.bg",
+                "_createdOn": 1743622569520,
+                "_id": "e1c12ff8-efd2-433d-baea-5d39f5f1f21e"
+            },
+            {
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "recipeId": "2",
+                "comment": "Will try it!",
+                "author": "peter@abv.bg",
+                "_createdOn": 1743622582261,
+                "_id": "2013ea62-1405-4751-a14b-58e442897a7c"
+            },
+            {
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "recipeId": "3",
+                "comment": "Delicious!",
+                "author": "peter@abv.bg",
+                "_createdOn": 1743622594517,
+                "_id": "0911f731-999b-4db9-a959-9753840645e0"
+            },
+            {
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "recipeId": "5",
+                "comment": "Delicious!",
+                "author": "peter@abv.bg",
+                "_createdOn": 1743622598885,
+                "_id": "686145b6-05d7-4c11-848e-08a9de4bde87"
+            },
+            {
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "recipeId": "4",
+                "comment": "I hope I will make it from the first time",
+                "author": "peter@abv.bg",
+                "_createdOn": 1743622614648,
+                "_id": "2691e713-987c-4ffd-837c-0ea7725cfa53"
+            },
+            {
+                "_ownerId": "a58ee266-024b-488f-ad46-2813ce8c02bb",
+                "recipeId": "0",
+                "comment": "Great idea!",
+                "author": "shosho_abm@abv.bg",
+                "_createdOn": 1743622662547,
+                "_id": "0641a615-94cb-4f1e-8a81-c7c2df85bc77"
+            },
+            {
+                "_ownerId": "a58ee266-024b-488f-ad46-2813ce8c02bb",
+                "recipeId": "1",
+                "comment": "Delicious!",
+                "author": "shosho_abm@abv.bg",
+                "_createdOn": 1743622670554,
+                "_id": "a6fc8ef0-27ec-4575-967c-ea02599559f2"
+            },
+            {
+                "_ownerId": "a58ee266-024b-488f-ad46-2813ce8c02bb",
+                "recipeId": "2",
+                "comment": "Great idea!",
+                "author": "shosho_abm@abv.bg",
+                "_createdOn": 1743622677326,
+                "_id": "bdecbdc0-9279-45cf-8a1f-643dc6e2a3c8"
+            },
+            {
+                "_ownerId": "a58ee266-024b-488f-ad46-2813ce8c02bb",
+                "recipeId": "3",
+                "comment": "I will try it!",
+                "author": "shosho_abm@abv.bg",
+                "_createdOn": 1743622688117,
+                "_id": "def6a700-451c-4b52-99a1-4c6b2eec437f"
+            },
+            {
+                "_ownerId": "a58ee266-024b-488f-ad46-2813ce8c02bb",
+                "recipeId": "4",
+                "comment": "Kuv si ti we?",
+                "author": "shosho_abm@abv.bg",
+                "_createdOn": 1743622708150,
+                "_id": "e37ca039-fb83-4aa3-bf4f-473d10d1d0ae"
+            },
+            {
+                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                "recipeId": "0",
+                "comment": "I hope I will make it",
+                "author": "admin@abv.bg",
+                "_createdOn": 1743622741143,
+                "_id": "6bcdbcaf-eed0-499e-8259-9a04d5011494"
+            },
+            {
+                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                "recipeId": "1",
+                "comment": "Super!",
+                "author": "admin@abv.bg",
+                "_createdOn": 1743622748882,
+                "_id": "c57dd3ac-e717-4cdb-934b-584ccd7ee9b2"
+            },
+            {
+                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                "recipeId": "4",
+                "comment": "Aide stiga gluposti",
+                "author": "admin@abv.bg",
+                "_createdOn": 1743622774804,
+                "_id": "bcdc954a-ca85-4e89-a79e-98c5dcd8363e"
+            },
+            {
+                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                "recipeId": "6a62d8db-32e8-4149-b097-98c532439f75",
+                "comment": "Super!",
+                "author": "admin@abv.bg",
+                "_createdOn": 1743622786688,
+                "_id": "2bc8ca53-b0e4-4c99-b453-38964ab0623b"
+            },
+            {
+                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                "recipeId": "c82233c3-fcb9-417b-8342-3316f9e0d208",
+                "comment": "I will try it!",
+                "author": "admin@abv.bg",
+                "_createdOn": 1743622796814,
+                "_id": "9a5a695b-c2d8-4302-8dca-98ecf9ec4f38"
             }
         ]
     };
