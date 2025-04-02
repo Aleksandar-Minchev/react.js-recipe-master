@@ -4,7 +4,8 @@ import { usePageTitle } from "../../hooks/usePageTitle";
 import useAuth from "../../hooks/useAuth";
 
 import './Details.css'
-
+import CommentsCreate from "../comments-create/CommentsCreate";
+import { useCreateComment } from "../../services/commentService";
 
 export default function Details() {
     usePageTitle('Recipe Details');
@@ -12,23 +13,29 @@ export default function Details() {
     const {recipeId} = useParams();
     const { recipe } = UseOne(recipeId);
     const {deleteRecipe} = useDelete();
+    const {create} = useCreateComment();
     const { email, userId } = useAuth();
     
 
     const isOwner = userId === recipe._ownerId;
 
     const deleteRecipeHandler = async () => {
-    const hasConfirm = confirm(`Are you sure you want to delete ${recipe.title}?`);
+      const hasConfirm = confirm(`Are you sure you want to delete ${recipe.title}?`);
 
-    if (!hasConfirm) {
-          return;
-    }
+      if (!hasConfirm) {
+            return;
+      }
 
-    await deleteRecipe(recipeId);
+      await deleteRecipe(recipeId);
 
-    navigate('/recipes');
+      navigate('/recipes');
     };
 
+    const createComment = async (formData) => {
+      const comment = formData.get('comment');
+      await create(recipeId, comment);
+      navigate(`/recipes/${recipeId}/details`)
+    }
 
     return(
       <section id="recipe-details">
@@ -51,15 +58,13 @@ export default function Details() {
               </>
             )}
             <button>Like</button>
+            {/* <p name="likes">Likes: {recipe.likes.length}</p> */}
           </div>
         )}
-        <h2>Comments</h2>
-        {email && (
-          <>
-          <textarea placeholder="Add your comment here..."></textarea>
-          <button>Submit Comment</button>
-          </>
-        )}
+        <h2>Add new comment:</h2>
+        {email && <CommentsCreate email={email}
+                recipeId={recipeId}
+                onSubmit={createComment}/>}
         <div>
           <p>Comments:</p>
             <ul>

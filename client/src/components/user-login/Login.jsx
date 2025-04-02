@@ -21,7 +21,7 @@ export default function Login() {
         navigate('/');
     };
 
-    const [values, loginAction, isPending] = useActionState(loginHandler, { email: '', password: '' });
+    const [_, loginAction, isPending] = useActionState(loginHandler, { email: '', password: '' });
 
     return(
         <>

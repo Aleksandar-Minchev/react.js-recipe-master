@@ -15,9 +15,12 @@ export const useCreateRecipe = () => {
 
 export const UseGetAll = () => {
     const [recipes, setRecipes] = useState([]);
-
+    
     useEffect(() => {
-        requester(baseUrl, null, 'GET')
+        const searchParams = new URLSearchParams({
+            select: '_id,imageUrl,title,description',
+        });
+        requester(`${baseUrl}?${searchParams.toString()}`, null, 'GET')
             .then(setRecipes)
     }, []);
 
