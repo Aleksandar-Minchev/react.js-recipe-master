@@ -1,15 +1,23 @@
+import { useNavigate } from "react-router";
+import { useDeleteComment } from "../../services/commentService";
+
 export default function ShowComments({
     comment,
     email
 }) {
+    const {deleteComment} = useDeleteComment();
+    const navigate = useNavigate();
     const isOwner = email === comment.author;
+
 
     const commentEditHandler = () => {
         
     };
 
-    const commentDeleteHandler = () => {
-        
+    const commentDeleteHandler = async () => {
+        await deleteComment(comment._id);
+
+        navigate(0);
     };   
     
     return (

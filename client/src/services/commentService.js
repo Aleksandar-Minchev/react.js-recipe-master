@@ -34,3 +34,12 @@ export const useGetComments = (recipeId) => {
         return {comments, setComments}
 };
 
+export const useDeleteComment = () => {
+    const deleteComment = (commentId) =>
+        requester(`${baseUrl}/${commentId}`, null, 'DELETE');
+
+    return {
+        deleteComment
+    }
+};
+
