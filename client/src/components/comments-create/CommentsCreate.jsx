@@ -1,18 +1,16 @@
-import { useNavigate } from "react-router";
 import { useCreateComment } from "../../services/commentService";
 
 export default function CommentsCreate({
     email,
-    recipeId
+    recipeId,
+    onCreate
 }) {
     const {create} = useCreateComment();
-    const navigate = useNavigate();
     const onSubmit = async (formData) => {
         const comment = formData.get('comment');
   
-        await create(recipeId, comment, email);
-  
-        navigate(`/recipes/${recipeId}/details`)
+        const createdComment = await create(recipeId, comment, email);
+        onCreate(createdComment);
       }
 
     return (

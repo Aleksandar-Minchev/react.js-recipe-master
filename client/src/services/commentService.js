@@ -31,6 +31,6 @@ export const useGetComments = (recipeId) => {
                 .then(setComments);
         }, [recipeId])
 
-        return {comments}
-}
+        return {comments, setComments}
+};
 

@@ -16,14 +16,14 @@ export default function Header() {
         {isAuthenticated
           ? (
             <>
-            <li >
+              <li >
                 <Link to="/create"><button>Create</button></Link>
               </li>
               <li >
                 <Link to="/logout"><button>Logout</button></Link>          
               </li>
               <li >
-                <p style={{color: 'var(--light-blue)'}}>Hello, {email}!</p>
+                <p>Hello, {email}!</p>
               </li>
             </>         
           )

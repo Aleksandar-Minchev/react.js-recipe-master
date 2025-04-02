@@ -4,6 +4,7 @@ import { usePageTitle } from "../../hooks/usePageTitle";
 import useAuth from "../../hooks/useAuth";
 import CommentsCreate from "../comments-create/CommentsCreate";
 import { useGetComments } from "../../services/commentService";
+import ShowComments from "../comment-show/ShowComments";
 
 import './Details.css'
 
@@ -14,7 +15,7 @@ export default function Details() {
     const { recipe } = UseOne(recipeId);
     const {deleteRecipe} = useDelete();
     const { email, userId } = useAuth();    
-    const {comments} = useGetComments(recipeId);    
+    const {comments, setComments} = useGetComments(recipeId);    
 
     const isOwner = userId === recipe._ownerId;
 
@@ -30,7 +31,9 @@ export default function Details() {
       navigate('/recipes');
     };
 
-    
+    const createCommentHandler = (newComment) => {
+      setComments(state => [...state, newComment])
+    };    
 
     return(
       <section id="recipe-details">
@@ -62,17 +65,21 @@ export default function Details() {
           <CommentsCreate 
                 email={email}
                 recipeId={recipeId}
+                onCreate={createCommentHandler}
                 />
           </>
         )}
         <div>
+          {comments.length > 0 
+          ? (
+          <>
           <p>Comments:</p>
-            <ul>
-              {comments.length > 0 
-              ?  comments.map(comment => <li key={comment._id}>{comment.author}: {comment.comment}</li>)
-              : <li>No comments...</li>
-              }   
-            </ul>
+          <ul>
+            {comments.map(comment => 
+          <ShowComments comment={comment} email={email}/>)}
+          </ul>
+          </>
+          ) : <p>There are no comments for this recipe yet...</p> }   
         </div>
     </section>
   );
