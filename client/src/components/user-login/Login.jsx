@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router";
 import { useActionState, useContext } from "react";
+import { toast } from 'react-toastify'
 
 import { useLogin } from "../../services/authService";
 import { UserContext } from "../../contexts/userContext";
@@ -14,11 +15,14 @@ export default function Login() {
     const loginHandler = async (previousState, formData) => {
         const values = Object.fromEntries(formData);
 
-        const authData = await login(values.email, values.password);
-
-        userLoginHandler(authData);
-
-        navigate('/');
+        try {
+            const authData = await login(values.email, values.password);
+            userLoginHandler(authData);
+            toast.success('Login successful')
+            navigate('/');
+        } catch (err) {
+            toast.error(err.message);
+        }
     };
 
     const [_, loginAction, isPending] = useActionState(loginHandler, { email: '', password: '' });
@@ -31,7 +35,7 @@ export default function Login() {
                 <input type="email" name="email" placeholder="Enter your email" required />
                 <br />
                 <label>Password:</label>
-                <input type="password" name="password" placeholder="Enter your password" required />
+                <input type="password" name="password" autoComplete="on" placeholder="Enter your password" required />
                 <br />
                 <button type="submit" disabled={isPending}>Login</button>
                 <p className="field">

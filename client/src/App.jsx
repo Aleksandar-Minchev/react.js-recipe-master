@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router';
+import { ToastContainer } from 'react-toastify';
 
 import UserProvider from './components/providers/UserProvider';
 
@@ -47,6 +48,7 @@ function App() {
                 </main>
 
                 <Footer />
+                <ToastContainer/>
             </div>
         </UserProvider>
     )

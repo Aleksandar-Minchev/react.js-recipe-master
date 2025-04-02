@@ -2,6 +2,7 @@ import { useNavigate } from "react-router";
 import { useRegister } from "../../services/authService";
 import { useUserContext } from "../../contexts/userContext";
 import { usePageTitle } from "../../hooks/usePageTitle";
+import { toast } from "react-toastify";
 
 export default function Register() {
     usePageTitle('Register Page');
@@ -15,24 +16,25 @@ export default function Register() {
         const confirmPassword = formData.get('confirm-password');
 
         if (password !== confirmPassword) {
-            console.error('Password missmatch');
-
+            toast.error('Password missmatch');
             return;
         }
 
-        const authData = await register(email, password);
+        try {
+            const authData = await register(email, password);
 
-        userLoginHandler(authData);
+            userLoginHandler(authData);
 
-        navigate('/');
+            navigate('/');
+        } catch (err) {
+            toast.error(err.message)
+        }
+
     }
     return (
         <>
             <h1>Register</h1>
             <form action={registerHandler}>
-                <label>Name:</label>
-                <input type="text" name="name" placeholder="Enter your name" required />
-                <br />
                 <label>Email:</label>
                 <input type="email" name="email" placeholder="Enter your email" required />
                 <br />

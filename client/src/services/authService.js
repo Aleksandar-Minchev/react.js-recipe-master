@@ -28,7 +28,7 @@ export const useLogout = () => {
         };
 
         requester(`${baseUrl}/logout`, null, 'GET', options)
-            .then(userLogoutHandler);
+            .finally(userLogoutHandler);
 
     }, [accessToken, userLogoutHandler]);
 

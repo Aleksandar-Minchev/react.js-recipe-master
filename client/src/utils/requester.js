@@ -29,7 +29,12 @@ export const requester = async (url, data, method, options = {}) => {
 
     if (!responseContentType) {
         return;
-    }
+    };
+
+    if (!response.ok){
+        const error = await response.json();
+        throw error;
+    };
 
     const result = await response.json();
 

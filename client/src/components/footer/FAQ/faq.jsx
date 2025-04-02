@@ -1,6 +1,9 @@
+import { usePageTitle } from '../../../hooks/usePageTitle';
 import './faq.css';
 
 export default function FAQ() {
+    usePageTitle('FAQ');
+
     return (
         <div className="faq-container">
             <h2 className="faq-title">Frequently Asked Questions</h2>
